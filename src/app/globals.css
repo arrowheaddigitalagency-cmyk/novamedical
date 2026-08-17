@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary-green: #18893B;
+    --deep-green: #116B31;
+    --fresh-green: #29A84A;
+    --aqua-cyan: #19BFC4;
+    --orange-accent: #F59A3C;
+    --pink-accent: #EF4D78;
+    --purple-accent: #7856D8;
+    --deep-navy: #10182D;
+    --soft-bg: #F7FAF9;
+    --card-bg: #F7F9FB;
+    --main-text: #243244;
+    --muted-text: #64748B;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--main-text);
+    background-color: #ffffff;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    font-family: var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars & utilities */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassy box utility with light green border & very light shadow */
+.glass-box {
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(24, 137, 59, 0.2);
+  box-shadow: 0 4px 16px -2px rgba(24, 137, 59, 0.04), 0 2px 6px -1px rgba(16, 24, 45, 0.02);
+}
+
+.glass-box-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-box-hover:hover {
+  background: rgba(255, 255, 255, 0.98);
+  border-color: rgba(24, 137, 59, 0.4);
+  box-shadow: 0 8px 24px -4px rgba(24, 137, 59, 0.08), 0 4px 12px -2px rgba(16, 24, 45, 0.03);
+  transform: translateY(-2px);
+}
+
+/* Soft backdrop blur & subtle shadows */
+.shadow-soft {
+  box-shadow: 0 4px 16px -2px rgba(24, 137, 59, 0.04), 0 2px 6px -1px rgba(16, 24, 45, 0.02);
+}
+
+.shadow-card {
+  box-shadow: 0 6px 20px -4px rgba(24, 137, 59, 0.06);
+}
+
+.shadow-card-hover {
+  box-shadow: 0 10px 25px -5px rgba(24, 137, 59, 0.09);
+}
+
+/* Infinite marquee keyframe animation for continuous smooth logo slider */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Focus outline for WCAG accessibility */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid #18893B;
+  outline-offset: 2px;
+}
