@@ -43,18 +43,18 @@ export default function Header() {
     <>
       <header
         className={`sticky top-0 z-40 bg-white/95 backdrop-blur-md transition-all duration-300 ${
-          isScrolled ? "shadow-xs py-2 border-b border-emerald-100" : "py-3.5 border-b border-emerald-100/70"
+          isScrolled ? "shadow-xs py-2 border-b border-emerald-100" : "py-3 border-b border-emerald-100/70"
         }`}
       >
         <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
-            {/* Larger Logo */}
+            {/* Prominent Logo */}
             <Link href="/" aria-label="Nova Medical Centre Stirling Home">
               <NovaLogo className="h-12 sm:h-14 md:h-16 w-auto" />
             </Link>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-7 text-[15px] font-medium text-slate-700">
+            {/* Desktop Navigation Links */}
+            <nav className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-slate-700">
               <Link
                 href="/"
                 className="hover:text-[#18893B] transition-colors py-1 font-semibold text-[#18893B]"
@@ -87,27 +87,28 @@ export default function Header() {
               </Link>
             </nav>
 
-            {/* Right Action Bar */}
-            <div className="hidden xl:flex items-center gap-4 text-xs font-medium text-slate-600">
-              {/* Phone Quick Link */}
+            {/* Right Action Bar - ICON ONLY FOR PHONE & LOCATION AS REQUESTED */}
+            <div className="hidden xl:flex items-center gap-3 text-xs font-medium">
+              {/* Phone Icon Button ONLY */}
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="flex items-center gap-1.5 hover:text-[#18893B] transition-colors"
-                title="Call Stirling Clinic"
+                className="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-[#18893B] rounded-xl border border-emerald-200/80 transition-colors group relative"
+                title={`Call ${CLINIC_INFO.phone}`}
+                aria-label={`Call ${CLINIC_INFO.phone}`}
               >
-                <Phone className="w-3.5 h-3.5 text-[#18893B]" />
-                <span className="font-bold text-slate-800 text-sm">{CLINIC_INFO.phone}</span>
+                <Phone className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>
 
-              {/* Location Quick Link */}
+              {/* Location Map Pin Icon Button ONLY */}
               <a
                 href={CLINIC_INFO.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 hover:text-[#18893B] transition-colors"
+                className="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-[#18893B] rounded-xl border border-emerald-200/80 transition-colors group relative"
+                title="31 Cedric St, Stirling WA 6021 (Open Google Maps)"
+                aria-label="31 Cedric St, Stirling WA 6021 (Open Google Maps)"
               >
-                <MapPin className="w-3.5 h-3.5 text-[#18893B]" />
-                <span>31 Cedric St</span>
+                <MapPin className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>
 
               {/* Repeat Scripts Button */}
