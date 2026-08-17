@@ -159,11 +159,6 @@ export default function ContactSection() {
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full min-h-[380px]"
               />
-
-              <div className="absolute top-4 left-4 glass-box px-3.5 py-2 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2">
-                <Navigation className="w-4 h-4 text-[#18893B]" />
-                <span>31 Cedric St, Stirling WA 6021</span>
-              </div>
             </div>
 
             {/* Ready to Book Banner (FLUSH WITH BOTTOM LINE) */}

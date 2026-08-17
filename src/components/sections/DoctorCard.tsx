@@ -70,10 +70,10 @@ export default function DoctorCard({
       </div>
 
       {/* Card Action Buttons */}
-      <div className="p-3.5 bg-slate-50/80 border-t border-emerald-100/80 grid grid-cols-2 gap-2 shrink-0">
+      <div className="p-3 bg-slate-50/80 border-t border-emerald-100/80 grid grid-cols-2 gap-1.5 shrink-0">
         <button
           onClick={() => onViewProfile(doctor)}
-          className="py-2.5 px-3 bg-white hover:bg-emerald-50 text-slate-700 hover:text-[#18893B] text-xs font-bold rounded-xl border border-slate-200 transition-colors text-center shadow-2xs"
+          className="py-2.5 px-2 bg-white hover:bg-emerald-50 text-slate-700 hover:text-[#18893B] text-xs font-bold rounded-xl border border-slate-200 transition-colors text-center shadow-2xs whitespace-nowrap"
         >
           View Profile
         </button>
@@ -82,11 +82,11 @@ export default function DoctorCard({
           href={CLINIC_URLS.bookingUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="py-2.5 px-3 bg-[#18893B] hover:bg-[#116B31] text-white text-xs font-bold rounded-xl transition-colors shadow-2xs flex items-center justify-center gap-1.5"
+          className="py-2.5 px-2 bg-[#18893B] hover:bg-[#116B31] text-white text-xs font-bold rounded-xl transition-colors shadow-2xs flex items-center justify-center gap-1 whitespace-nowrap"
         >
-          <Calendar className="w-3.5 h-3.5" />
-          <span>Book Now</span>
-          <ExternalLink className="w-3 h-3 opacity-80" />
+          <Calendar className="w-3.5 h-3.5 shrink-0" />
+          <span className="whitespace-nowrap">Book Now</span>
+          <ExternalLink className="w-3 h-3 opacity-80 shrink-0" />
         </a>
       </div>
     </div>
