@@ -307,6 +307,7 @@ export const DOCTORS: Doctor[] = [
     initials: "GD",
     gender: "male",
     accentColor: "#19BFC4",
+    avatarUrl: "/images/dr-gerard-dcruz.jpeg",
     areasOfInterest: [
       "Full Skin Check",
       "Chronic Disease Management",
@@ -324,6 +325,7 @@ export const DOCTORS: Doctor[] = [
     initials: "MC",
     gender: "female",
     accentColor: "#EF4D78",
+    avatarUrl: "/images/dr-mildred-chiwara.jpeg",
     areasOfInterest: [
       "Women's Health",
       "Sexual Health",
@@ -344,6 +346,7 @@ export const DOCTORS: Doctor[] = [
     initials: "DA",
     gender: "female",
     accentColor: "#7856D8",
+    avatarUrl: "/images/dr-dana-alexanderscu.jpeg",
     areasOfInterest: [
       "Family Health",
       "Women's Health",
@@ -396,6 +399,7 @@ export const DOCTORS: Doctor[] = [
     initials: "YH",
     gender: "female",
     accentColor: "#19BFC4",
+    avatarUrl: "/images/dr-yi-ying-heng.jpeg",
     areasOfInterest: [
       "Family Health",
       "Preventive Health",
