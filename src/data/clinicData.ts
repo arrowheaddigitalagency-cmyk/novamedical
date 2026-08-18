@@ -288,6 +288,7 @@ export const DOCTORS: Doctor[] = [
     initials: "ZS",
     gender: "female",
     accentColor: "#18893B",
+    avatarUrl: "/images/dr-zille-shehzad.jpeg",
     areasOfInterest: [
       "Paediatrics",
       "Diabetes",
@@ -362,6 +363,7 @@ export const DOCTORS: Doctor[] = [
     initials: "HS",
     gender: "female",
     accentColor: "#F59A3C",
+    avatarUrl: "/images/dr-hira-shehzad.jpeg",
     areasOfInterest: [
       "Family Health",
       "Paediatrics",
