@@ -458,14 +458,14 @@ export const OPENING_HOURS: OpeningHourItem[] = [
 
 export const ACCREDITATION_LOGOS = [
   {
-    id: "1st",
-    src: "/images/1st.png",
+    id: "ama",
+    src: "/images/ama-logo.png",
     alt: "Australian Medical Association WA (AMA WA) Member",
     title: "AMA WA Member",
   },
   {
-    id: "3rd",
-    src: "/images/3rd.png",
+    id: "racgp",
+    src: "/images/racgp-logo.png",
     alt: "Royal Australian College of General Practitioners (RACGP)",
     title: "RACGP Accredited Facility",
   },
