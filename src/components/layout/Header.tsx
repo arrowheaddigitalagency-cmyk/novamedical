@@ -105,8 +105,8 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-[#18893B] rounded-xl border border-emerald-200/80 transition-colors group relative"
-                title="31 Cedric St, Stirling WA 6021 (Open Google Maps)"
-                aria-label="31 Cedric St, Stirling WA 6021 (Open Google Maps)"
+                title="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
+                aria-label="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
               >
                 <MapPin className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>

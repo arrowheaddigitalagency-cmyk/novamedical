@@ -110,9 +110,9 @@ const jsonLd = {
   acceptsReservations: "True",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "31 Cedric St",
+    streetAddress: "31 Cedric Street",
     addressLocality: "Stirling",
-    addressRegion: "WA",
+    addressRegion: "Western Australia",
     postalCode: "6021",
     addressCountry: "AU",
   },

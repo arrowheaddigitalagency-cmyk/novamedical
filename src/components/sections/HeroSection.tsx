@@ -12,8 +12,9 @@ import {
   Users,
   CheckCircle2,
   Sparkles,
+  Sun,
 } from "lucide-react";
-import { CLINIC_INFO, CLINIC_URLS, HERO_BADGES } from "@/data/clinicData";
+import { CLINIC_INFO, CLINIC_URLS, HERO_BADGES, DOCTORS } from "@/data/clinicData";
 
 export default function HeroSection() {
   return (
@@ -135,21 +136,31 @@ export default function HeroSection() {
             <div className="w-full max-w-md bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-xl space-y-5">
               {/* Integrated Top Highlights Bar */}
               <div className="grid grid-cols-2 gap-2.5">
-                <div className="bg-emerald-50/90 p-2.5 rounded-xl border border-emerald-100 flex items-center gap-2">
-                  <div className="w-7 h-7 rounded-lg bg-emerald-100 text-[#18893B] flex items-center justify-center font-bold text-xs shrink-0">
-                    8
+                <div className="bg-emerald-50/90 p-2.5 rounded-2xl border border-emerald-100 flex flex-col justify-center gap-1.5 h-full">
+                  <div className="flex items-center gap-2">
+                    <div className="w-7 h-7 rounded-lg bg-emerald-100 text-[#18893B] flex items-center justify-center font-bold text-xs shrink-0">
+                      {DOCTORS.length}
+                    </div>
+                    <p className="font-bold text-slate-800 text-[11px] leading-tight">Experienced GPs</p>
                   </div>
-                  <div>
-                    <p className="font-bold text-slate-800 text-[11px]">Experienced GPs</p>
-                    <p className="text-[10px] text-emerald-700 font-medium">Accepting New Patients</p>
-                  </div>
+                  <p className="text-[10px] text-emerald-700 font-medium pl-0.5">Accepting New Patients</p>
                 </div>
 
-                <div className="bg-teal-50/90 p-2.5 rounded-xl border border-teal-100 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-[#19BFC4] shrink-0" />
-                  <div>
-                    <p className="font-bold text-slate-800 text-[11px]">Yellow Fever</p>
-                    <p className="text-[10px] text-teal-700 font-medium">Accredited Clinic</p>
+                <div className="space-y-2">
+                  <div className="bg-teal-50/90 p-2 rounded-xl border border-teal-100 flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-[#19BFC4] shrink-0" />
+                    <div>
+                      <p className="font-bold text-slate-800 text-[11px] leading-tight">Yellow Fever</p>
+                      <p className="text-[10px] text-teal-700 font-medium leading-tight">Accredited Clinic</p>
+                    </div>
+                  </div>
+
+                  <div className="bg-amber-50/90 p-2 rounded-xl border border-amber-100 flex items-center gap-2">
+                    <Sun className="w-4 h-4 text-amber-600 shrink-0" />
+                    <div>
+                      <p className="font-bold text-slate-800 text-[11px] leading-tight">Skin Check</p>
+                      <p className="text-[10px] text-amber-700 font-medium leading-tight">Accredited Clinic</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -176,16 +187,8 @@ export default function HeroSection() {
                   <span className="font-semibold text-slate-800">Private Billing</span>
                 </div>
                 <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-medium">Medicare Registered</span>
-                  <span className="font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100">Yes</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
                   <span className="text-slate-500 font-medium">Walk-ins Accepted</span>
                   <span className="font-semibold text-slate-800">Yes</span>
-                </div>
-                <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-medium">In-House Specialists</span>
-                  <span className="font-semibold text-[#18893B]">Paediatrician &amp; Psychiatrist</span>
                 </div>
               </div>
 

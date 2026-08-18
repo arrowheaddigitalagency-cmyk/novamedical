@@ -45,9 +45,9 @@ export const CLINIC_INFO = {
   phoneInt: "+61 8 9349 9900",
   fax: "08 9117 2005",
   email: "info@novamedical.com.au",
-  address: "31 Cedric St, Stirling WA 6021, Australia",
-  shortAddress: "31 Cedric St",
-  fullAddress: "31 Cedric St, Stirling WA 6021, Australia",
+  address: "31 Cedric Street, Stirling, Western Australia 6021",
+  shortAddress: "31 Cedric Street, Stirling, Western Australia 6021",
+  fullAddress: "31 Cedric Street, Stirling, Western Australia 6021",
   suburb: "Stirling",
   state: "WA",
   postcode: "6021",
@@ -429,6 +429,24 @@ export const DOCTORS: Doctor[] = [
       "Palliative Care",
     ],
   },
+  {
+    id: "dr-anita-jogewar",
+    name: "Dr Anita Jogewar",
+    role: "General Practitioner",
+    qualifications: "MBBS • FRACGP",
+    initials: "AJ",
+    gender: "female",
+    accentColor: "#EF4D78",
+    avatarUrl: "/images/dr-anita-jogewar.jpeg",
+    areasOfInterest: [
+      "Women's Health",
+      "Paediatrics",
+      "Chronic Disease Management",
+      "Family Health",
+      "Preventive Health",
+      "Skin Checks",
+    ],
+  },
 ];
 
 export const OPENING_HOURS: OpeningHourItem[] = [
@@ -444,12 +462,6 @@ export const ACCREDITATION_LOGOS = [
     src: "/images/1st.png",
     alt: "Australian Medical Association WA (AMA WA) Member",
     title: "AMA WA Member",
-  },
-  {
-    id: "2nd",
-    src: "/images/2nd.png",
-    alt: "AGPAL Quality Accredited Practice",
-    title: "AGPAL Accredited Practice",
   },
   {
     id: "3rd",
