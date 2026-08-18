@@ -23,7 +23,7 @@ export default function AccreditationSection() {
         </div>
 
         {/* SINGLE CLEAN BOX WITH LARGE LOGOS */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="glass-box rounded-3xl p-8 sm:p-10 relative flex flex-col items-center justify-between shadow-sm">
             {/* Top Shield Tag */}
             <div className="flex items-center gap-2 px-5 py-2 bg-emerald-50 text-[#18893B] rounded-full text-sm font-semibold border border-emerald-200/80 mb-6 shadow-2xs">
@@ -32,16 +32,16 @@ export default function AccreditationSection() {
             </div>
 
             {/* Large Single Row Icons */}
-            <div className="flex flex-wrap items-center justify-center gap-12 sm:gap-20 w-full my-4">
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 md:gap-16 w-full my-4">
               {ACCREDITATION_LOGOS.map((item) => (
                 <Image
                   key={item.id}
                   src={item.src}
                   alt={item.alt}
                   title={item.title}
-                  width={400}
-                  height={160}
-                  className="h-20 sm:h-28 md:h-32 w-auto object-contain transition-transform hover:scale-105"
+                  width={300}
+                  height={120}
+                  className="h-16 sm:h-24 md:h-28 w-auto object-contain transition-transform hover:scale-105"
                   unoptimized
                   priority
                 />

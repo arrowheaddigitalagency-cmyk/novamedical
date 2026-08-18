@@ -458,6 +458,12 @@ export const OPENING_HOURS: OpeningHourItem[] = [
 
 export const ACCREDITATION_LOGOS = [
   {
+    id: "agpal",
+    src: "/images/agpal-logo.png",
+    alt: "AGPAL Quality Accredited Practice",
+    title: "AGPAL Accredited Practice",
+  },
+  {
     id: "ama",
     src: "/images/ama-logo.png",
     alt: "Australian Medical Association WA (AMA WA) Member",
