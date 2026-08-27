@@ -24,11 +24,11 @@ export default function ContactSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#19BFC4]">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338]">
             GET IN TOUCH
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-            Contact <span className="text-[#18893B]">Us</span>
+            Contact <span className="text-[#E06338]">Us</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             We&apos;re here to help. Reach out to us for appointments, inquiries, or any health concerns.
@@ -40,7 +40,7 @@ export default function ContactSection() {
           <div className="lg:col-span-6 space-y-4 flex flex-col justify-between">
             {/* Phone Card */}
             <div className="glass-box p-5 rounded-2xl flex items-start gap-4">
-              <div className="p-3 bg-emerald-50 text-[#18893B] border border-emerald-200/80 rounded-xl shrink-0">
+              <div className="p-3 bg-orange-50 text-[#E06338] border border-orange-200/80 rounded-xl shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="space-y-1">
@@ -49,7 +49,7 @@ export default function ContactSection() {
                 </span>
                 <a
                   href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                  className="text-lg font-bold text-[#18893B] hover:underline block"
+                  className="text-lg font-bold text-[#E06338] hover:underline block"
                 >
                   {CLINIC_INFO.phone}
                 </a>
@@ -70,7 +70,7 @@ export default function ContactSection() {
                 </span>
                 <a
                   href={`mailto:${CLINIC_INFO.email}`}
-                  className="text-base font-bold text-slate-800 hover:text-[#18893B] hover:underline block break-all"
+                  className="text-base font-bold text-slate-800 hover:text-[#E06338] hover:underline block break-all"
                 >
                   {CLINIC_INFO.email}
                 </a>
@@ -99,7 +99,7 @@ export default function ContactSection() {
                   href={CLINIC_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#18893B] hover:underline pt-1"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E06338] hover:underline pt-1"
                 >
                   <span>Get Directions on Google Maps</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -111,10 +111,10 @@ export default function ContactSection() {
             <div className="bg-[#10182D] text-white p-5 sm:p-6 rounded-2xl shadow-xs space-y-4 border border-slate-800">
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2.5">
-                  <Clock className="w-5 h-5 text-[#19BFC4]" />
+                  <Clock className="w-5 h-5 text-[#E06338]" />
                   <h3 className="font-bold text-base text-white">Opening Hours</h3>
                 </div>
-                <span className="text-[11px] font-semibold text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-800">
+                <span className="text-[11px] font-semibold text-orange-400 bg-orange-950/80 px-2.5 py-0.5 rounded-full border border-orange-800">
                   Open 7 Days
                 </span>
               </div>
@@ -134,10 +134,10 @@ export default function ContactSection() {
                       }`}
                     >
                       <span className="flex items-center gap-1.5">
-                        {isHighlighted && <span className="w-1.5 h-1.5 rounded-full bg-[#19BFC4]" />}
+                        {isHighlighted && <span className="w-1.5 h-1.5 rounded-full bg-[#E06338]" />}
                         <span>{item.day}</span>
                       </span>
-                      <span className="font-mono text-emerald-300 font-semibold">{item.hours}</span>
+                      <span className="font-mono text-orange-300 font-semibold">{item.hours}</span>
                     </div>
                   );
                 })}

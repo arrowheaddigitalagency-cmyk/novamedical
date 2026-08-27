@@ -107,9 +107,9 @@ export default function ServicesSection() {
                 {ADDITIONAL_SERVICES.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-white px-3.5 py-2.5 rounded-xl border border-slate-200/80 text-xs font-medium text-slate-700 flex items-center gap-2 hover:border-[#18893B] hover:text-[#18893B] transition-colors"
+                    className="bg-white px-3.5 py-2.5 rounded-xl border border-slate-200/80 text-xs font-medium text-slate-700 flex items-center gap-2 hover:border-[#E06338] hover:text-[#E06338] transition-colors"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#18893B]" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#E06338]" />
                     <span>{item}</span>
                   </div>
                 ))}
@@ -119,7 +119,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Services CTA Banner matching reference screenshot */}
-        <div className="bg-gradient-to-r from-emerald-50/80 via-teal-50/50 to-white p-6 sm:p-8 rounded-3xl border border-teal-100 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+        <div className="bg-gradient-to-r from-orange-50/80 via-amber-50/50 to-white p-6 sm:p-8 rounded-3xl border border-orange-200 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
           <div className="space-y-1">
             <p className="text-sm sm:text-base font-semibold text-slate-800">
               Can&apos;t find what you&apos;re looking for?
@@ -133,7 +133,7 @@ export default function ServicesSection() {
             href={CLINIC_URLS.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-[#19BFC4] hover:bg-[#15A5A9] text-white font-bold text-sm rounded-xl shadow-sm hover:shadow transition-all shrink-0 flex items-center gap-2"
+            className="px-6 py-3 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl shadow-sm hover:shadow transition-all shrink-0 flex items-center gap-2"
           >
             <span>Book an Appointment</span>
             <ArrowRight className="w-4 h-4" />
@@ -153,7 +153,7 @@ export default function ServicesSection() {
             </button>
 
             <div>
-              <span className="text-xs font-bold text-[#18893B] uppercase tracking-wider">
+              <span className="text-xs font-bold text-[#E06338] uppercase tracking-wider">
                 Service Overview
               </span>
               <h3 className="text-xl font-bold text-slate-900 mt-0.5">
@@ -172,7 +172,7 @@ export default function ServicesSection() {
                 <ul className="space-y-2 text-xs text-slate-700">
                   {selectedService.details.map((detail, idx) => (
                     <li key={idx} className="flex items-start gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-[#18893B] shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
                       <span>{detail}</span>
                     </li>
                   ))}
@@ -185,7 +185,7 @@ export default function ServicesSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-2.5 bg-[#18893B] hover:bg-[#116B31] text-white font-bold text-xs rounded-xl shadow transition-colors text-center flex items-center justify-center gap-1.5"
+                className="flex-1 py-2.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-xs rounded-xl shadow transition-colors text-center flex items-center justify-center gap-1.5"
               >
                 <span>Book Appointment</span>
                 <ExternalLink className="w-3.5 h-3.5 opacity-80" />

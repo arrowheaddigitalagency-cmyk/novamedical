@@ -7,15 +7,15 @@ import { ShieldCheck } from "lucide-react";
 
 export default function AccreditationSection() {
   return (
-    <section className="py-16 bg-[#F7FAF9] border-b border-emerald-100/60 overflow-hidden">
+    <section className="py-16 bg-[#FFFBF9] border-b border-orange-100/60 overflow-hidden">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Section Title */}
         <div className="text-center max-w-xl mx-auto space-y-2">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#18893B]">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338]">
             QUALITY ASSURED
           </span>
           <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-            Accredited &amp; <span className="text-[#18893B]">Trusted</span>
+            Accredited &amp; <span className="text-[#E06338]">Trusted</span>
           </h2>
           <p className="text-sm text-slate-600">
             Recognized by leading healthcare standards &amp; regulatory bodies across Australia.
@@ -26,8 +26,8 @@ export default function AccreditationSection() {
         <div className="max-w-4xl mx-auto">
           <div className="glass-box rounded-3xl p-8 sm:p-10 relative flex flex-col items-center justify-between shadow-sm">
             {/* Top Shield Tag */}
-            <div className="flex items-center gap-2 px-5 py-2 bg-emerald-50 text-[#18893B] rounded-full text-sm font-semibold border border-emerald-200/80 mb-6 shadow-2xs">
-              <ShieldCheck className="w-5 h-5 text-[#18893B]" />
+            <div className="flex items-center gap-2 px-5 py-2 bg-orange-50 text-[#E06338] rounded-full text-sm font-semibold border border-orange-200/80 mb-6 shadow-2xs">
+              <ShieldCheck className="w-5 h-5 text-[#E06338]" />
               <span>Accredited General Practice</span>
             </div>
 
@@ -49,7 +49,7 @@ export default function AccreditationSection() {
             </div>
 
             {/* Bottom Subtle Accent Bar */}
-            <div className="w-20 h-1.5 bg-emerald-500/40 rounded-full mt-6" />
+            <div className="w-20 h-1.5 bg-[#E06338]/40 rounded-full mt-6" />
           </div>
         </div>
       </div>

@@ -32,22 +32,22 @@ export default function Footer() {
               {CLINIC_INFO.footerDescription}
             </p>
 
-            <div className="pt-2 flex items-center gap-2 text-xs text-emerald-400 font-medium">
-              <Shield className="w-4 h-4 shrink-0 text-[#29A84A]" />
+            <div className="pt-2 flex items-center gap-2 text-xs text-orange-400 font-medium">
+              <Shield className="w-4 h-4 shrink-0 text-[#E06338]" />
               <span>Fully Accredited General Practice</span>
             </div>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-[#18893B] pl-2.5">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-[#E06338] pl-2.5">
               Quick Links
             </h3>
             <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
                 <Link
                   href="/"
-                  className="hover:text-[#19BFC4] transition-colors"
+                  className="hover:text-[#E06338] transition-colors"
                 >
                   Home
                 </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#services"
-                  className="hover:text-[#19BFC4] transition-colors"
+                  className="hover:text-[#E06338] transition-colors"
                 >
                   Our Services
                 </Link>
@@ -63,7 +63,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/#doctors"
-                  className="hover:text-[#19BFC4] transition-colors"
+                  className="hover:text-[#E06338] transition-colors"
                 >
                   Meet Our Doctors
                 </Link>
@@ -71,7 +71,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/fees"
-                  className="hover:text-[#19BFC4] transition-colors"
+                  className="hover:text-[#E06338] transition-colors"
                 >
                   Fees &amp; Billing Policy
                 </Link>
@@ -79,7 +79,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="hover:text-[#19BFC4] transition-colors"
+                  className="hover:text-[#E06338] transition-colors"
                 >
                   Contact Us &amp; Directions
                 </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
                   href={CLINIC_URLS.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#19BFC4] hover:underline font-semibold inline-flex items-center gap-1"
+                  className="text-[#E06338] hover:underline font-semibold inline-flex items-center gap-1"
                 >
                   <span>Book Appointment Online</span>
                   <ExternalLink className="w-3 h-3" />
@@ -111,12 +111,12 @@ export default function Footer() {
 
           {/* Column 3: Contact Details */}
           <div>
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-[#18893B] pl-2.5">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider mb-4 border-l-2 border-[#E06338] pl-2.5">
               Contact Details
             </h3>
             <ul className="space-y-3 text-sm text-slate-300">
               <li className="flex items-start gap-2.5">
-                <Phone className="w-4 h-4 text-[#19BFC4] shrink-0 mt-0.5" />
+                <Phone className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
                 <div>
                   <span className="block text-xs text-slate-400">Phone</span>
                   <a
@@ -135,7 +135,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
-                <Mail className="w-4 h-4 text-[#19BFC4] shrink-0 mt-0.5" />
+                <Mail className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
                 <div>
                   <span className="block text-xs text-slate-400">Email</span>
                   <a
@@ -147,7 +147,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#19BFC4] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
                 <div>
                   <span className="block text-xs text-slate-400">Address</span>
                   <span>{CLINIC_INFO.shortAddress}</span>
@@ -158,7 +158,7 @@ export default function Footer() {
 
           {/* Column 4: Opening Hours & Action */}
           <div className="space-y-4">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider border-l-2 border-[#18893B] pl-2.5">
+            <h3 className="text-sm font-bold text-white uppercase tracking-wider border-l-2 border-[#E06338] pl-2.5">
               Opening Hours
             </h3>
             <div className="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 text-xs space-y-1.5 text-slate-300">

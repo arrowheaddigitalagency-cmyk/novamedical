@@ -83,7 +83,7 @@ export default function ServiceCard({ service, onSelect }: ServiceCardProps) {
         </div>
 
         <div className="space-y-2">
-          <h3 className="text-lg font-bold text-slate-800 tracking-tight group-hover:text-[#18893B] transition-colors">
+          <h3 className="text-lg font-bold text-slate-800 tracking-tight group-hover:text-[#E06338] transition-colors">
             {service.title}
           </h3>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">

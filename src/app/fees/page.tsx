@@ -57,7 +57,7 @@ export default function FeesPage() {
           <div>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#18893B] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#E06338] hover:underline"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>

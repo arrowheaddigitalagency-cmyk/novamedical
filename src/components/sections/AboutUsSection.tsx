@@ -68,7 +68,7 @@ export default function AboutUsSection() {
           <div className="lg:col-span-5 space-y-4">
             <div className="bg-[#10182D] text-white p-6 sm:p-8 rounded-3xl shadow-xl space-y-6 border border-slate-800">
               <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
-                <div className="p-3 bg-[#18893B] text-white rounded-2xl">
+                <div className="p-3 bg-[#E06338] text-white rounded-2xl">
                   <Building2 className="w-6 h-6" />
                 </div>
                 <div>
@@ -79,7 +79,7 @@ export default function AboutUsSection() {
 
               <div className="space-y-4 text-xs sm:text-sm">
                 <div className="flex items-start gap-3">
-                  <span className="px-2.5 py-1 bg-[#18893B] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2012</span>
+                  <span className="px-2.5 py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2012</span>
                   <div>
                     <strong className="text-white block">Northbridge Clinic</strong>
                     <span className="text-slate-300">Our very first medical centre launched</span>
@@ -87,7 +87,7 @@ export default function AboutUsSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <span className="px-2.5 py-1 bg-[#19BFC4] text-slate-900 font-bold rounded-lg text-xs shrink-0 mt-0.5">Expansion</span>
+                  <span className="px-2.5 py-1 bg-amber-500 text-slate-900 font-bold rounded-lg text-xs shrink-0 mt-0.5">Expansion</span>
                   <div>
                     <strong className="text-white block">Stirling &amp; Manning Clinics</strong>
                     <span className="text-slate-300">Established to serve local Stirling community</span>
@@ -95,7 +95,7 @@ export default function AboutUsSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <span className="px-2.5 py-1 bg-amber-500 text-slate-900 font-bold rounded-lg text-xs shrink-0 mt-0.5">2023</span>
+                  <span className="px-2.5 py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2023</span>
                   <div>
                     <strong className="text-white block">Greenwood Clinic</strong>
                     <span className="text-slate-300">Fourth clinic opened in January 2023</span>
@@ -109,14 +109,14 @@ export default function AboutUsSection() {
         {/* SEO Keywords Footer Bar (Preserving original search visibility keywords) */}
         <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-2xs space-y-3">
           <div className="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-wider">
-            <Tag className="w-4 h-4 text-[#18893B]" />
+            <Tag className="w-4 h-4 text-[#E06338]" />
             <span>Search &amp; Location Keywords</span>
           </div>
           <div className="flex flex-wrap gap-2 pt-1">
             {seoKeywords.map((keyword, index) => (
               <span
                 key={index}
-                className="px-3 py-1.5 bg-slate-100/80 hover:bg-emerald-50 text-slate-700 hover:text-[#18893B] text-xs font-medium rounded-xl border border-slate-200/60 transition-colors"
+                className="px-3 py-1.5 bg-slate-100/80 hover:bg-orange-50 text-slate-700 hover:text-[#E06338] text-xs font-medium rounded-xl border border-slate-200/60 transition-colors"
               >
                 {keyword}
               </span>

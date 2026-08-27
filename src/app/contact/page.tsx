@@ -8,7 +8,7 @@ export default function ContactPage() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 mb-4">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-xs font-bold text-[#18893B] hover:underline"
+          className="inline-flex items-center gap-2 text-xs font-bold text-[#E06338] hover:underline"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back to Home</span>
