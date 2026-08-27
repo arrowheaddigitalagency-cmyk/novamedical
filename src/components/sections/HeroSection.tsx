@@ -26,8 +26,8 @@ export default function HeroSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Status Banner */}
         <div className="flex flex-wrap items-center gap-2.5 mb-6 animate-fadeIn">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-100/90 text-[#116B31] border border-emerald-200 shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-[#18893B] animate-ping" />
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-orange-100/90 text-[#C54E26] border border-orange-200 shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-[#E06338] animate-ping" />
             <span>{HERO_BADGES[0]}</span>
           </span>
         </div>
@@ -84,8 +84,8 @@ export default function HeroSection() {
 
             {/* Bottom Quick Chips */}
             <div className="pt-6 border-t border-slate-200/60 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="flex items-start gap-3 p-3.5 bg-white/90 rounded-2xl border border-slate-100 shadow-2xs hover:border-emerald-200 transition-all">
-                <div className="p-2.5 bg-emerald-100/60 text-[#18893B] rounded-xl shrink-0 mt-0.5">
+              <div className="flex items-start gap-3 p-3.5 bg-white/90 rounded-2xl border border-slate-100 shadow-2xs hover:border-orange-200 transition-all">
+                <div className="p-2.5 bg-orange-100/60 text-[#E06338] rounded-xl shrink-0 mt-0.5">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -105,20 +105,20 @@ export default function HeroSection() {
                 href={CLINIC_URLS.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-start gap-3 p-3.5 bg-white/90 rounded-2xl border border-slate-100 shadow-2xs hover:border-teal-200 transition-all group"
+                className="flex items-start gap-3 p-3.5 bg-white/90 rounded-2xl border border-slate-100 shadow-2xs hover:border-orange-200 transition-all group"
               >
-                <div className="p-2.5 bg-teal-100/60 text-[#19BFC4] rounded-xl shrink-0 mt-0.5">
+                <div className="p-2.5 bg-orange-100/60 text-[#E06338] rounded-xl shrink-0 mt-0.5">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-slate-800 uppercase tracking-wide block flex items-center gap-1 group-hover:text-[#18893B]">
+                  <span className="text-xs font-bold text-slate-800 uppercase tracking-wide block flex items-center gap-1 group-hover:text-[#E06338]">
                     <span>Location</span>
                     <ExternalLink className="w-3 h-3 opacity-60" />
                   </span>
                   <span className="text-xs text-slate-600 block">
                     {CLINIC_INFO.shortAddress}
                   </span>
-                  <span className="text-[11px] text-emerald-700 font-medium block">
+                  <span className="text-[11px] text-amber-700 font-medium block">
                     {CLINIC_INFO.parking}
                   </span>
                 </div>
@@ -131,22 +131,22 @@ export default function HeroSection() {
             <div className="w-full max-w-md bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-xl space-y-5">
               {/* Integrated Top Highlights Bar */}
               <div className="grid grid-cols-2 gap-2.5">
-                <div className="bg-emerald-50/90 p-2.5 rounded-2xl border border-emerald-100 flex flex-col justify-center gap-1.5 h-full">
+                <div className="bg-orange-50/90 p-2.5 rounded-2xl border border-orange-100 flex flex-col justify-center gap-1.5 h-full">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-lg bg-emerald-100 text-[#18893B] flex items-center justify-center font-bold text-xs shrink-0">
+                    <div className="w-7 h-7 rounded-lg bg-orange-100 text-[#E06338] flex items-center justify-center font-bold text-xs shrink-0">
                       {DOCTORS.length}
                     </div>
                     <p className="font-bold text-slate-800 text-[11px] leading-tight">Experienced GPs</p>
                   </div>
-                  <p className="text-[10px] text-emerald-700 font-medium pl-0.5">Comprehensive Family Care</p>
+                  <p className="text-[10px] text-orange-700 font-medium pl-0.5">Comprehensive Family Care</p>
                 </div>
 
                 <div className="space-y-2">
-                  <div className="bg-teal-50/90 p-2 rounded-xl border border-teal-100 flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[#19BFC4] shrink-0" />
+                  <div className="bg-slate-50/90 p-2 rounded-xl border border-slate-200 flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-slate-600 shrink-0" />
                     <div>
                       <p className="font-bold text-slate-800 text-[11px] leading-tight">Yellow Fever</p>
-                      <p className="text-[10px] text-teal-700 font-medium leading-tight">Accredited Clinic</p>
+                      <p className="text-[10px] text-slate-600 font-medium leading-tight">Accredited Clinic</p>
                     </div>
                   </div>
 
@@ -162,7 +162,7 @@ export default function HeroSection() {
 
               {/* Brand Header */}
               <div className="flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#18893B] text-white flex items-center justify-center font-bold shadow-md shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-[#E06338] text-white flex items-center justify-center font-bold shadow-md shrink-0">
                   <HeartPulse className="w-6 h-6" />
                 </div>
                 <div>
@@ -193,7 +193,7 @@ export default function HeroSection() {
                   href={CLINIC_URLS.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 bg-[#18893B] hover:bg-[#116B31] text-white font-bold rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2"
+                  className="w-full py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Book Appointment Online</span>

@@ -98,7 +98,7 @@ export default function Header() {
               {/* Phone Icon Button ONLY */}
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-[#18893B] rounded-xl border border-emerald-200/80 transition-colors group relative"
+                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative"
                 title={`Call ${CLINIC_INFO.phone}`}
                 aria-label={`Call ${CLINIC_INFO.phone}`}
               >
@@ -110,7 +110,7 @@ export default function Header() {
                 href={CLINIC_INFO.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-emerald-50 hover:bg-emerald-100 text-[#18893B] rounded-xl border border-emerald-200/80 transition-colors group relative"
+                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative"
                 title="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
                 aria-label="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
               >
@@ -155,7 +155,7 @@ export default function Header() {
 
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="p-2 sm:p-2.5 bg-emerald-50 text-[#18893B] rounded-xl hover:bg-emerald-100 transition-colors"
+                className="p-2 sm:p-2.5 bg-orange-50 text-[#E06338] rounded-xl hover:bg-orange-100 transition-colors"
                 aria-label="Call clinic"
               >
                 <Phone className="w-5 h-5" />
