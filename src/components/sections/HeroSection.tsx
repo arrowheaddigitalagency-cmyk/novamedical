@@ -50,35 +50,35 @@ export default function HeroSection() {
             </p>
 
             {/* Action Buttons Row */}
-            <div className="flex flex-wrap items-center gap-3.5 pt-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2 w-full max-w-full">
               <a
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-base rounded-2xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-1 active:translate-y-0"
+                className="w-full sm:w-auto px-5 sm:px-6 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm sm:text-base rounded-2xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
               >
-                <Calendar className="w-5 h-5" />
-                <span>Book Now</span>
-                <ArrowRight className="w-5 h-5 ml-0.5" />
+                <Calendar className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
+                <span className="whitespace-nowrap">Book Now</span>
+                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-0.5 shrink-0" />
               </a>
 
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="px-5 py-3.5 bg-white hover:bg-orange-50 text-[#E06338] font-semibold text-base rounded-2xl border-2 border-orange-200 transition-all flex items-center gap-2 shadow-2xs hover:-translate-y-0.5"
+                className="w-full sm:w-auto px-4 sm:px-5 py-3.5 bg-white hover:bg-orange-50 text-[#E06338] font-semibold text-sm sm:text-base rounded-2xl border-2 border-orange-200 transition-all flex items-center justify-center gap-2 shadow-2xs hover:-translate-y-0.5 whitespace-nowrap"
               >
-                <Phone className="w-4 h-4 text-[#E06338]" />
-                <span>Call {CLINIC_INFO.phone}</span>
+                <Phone className="w-4 h-4 text-[#E06338] shrink-0" />
+                <span className="whitespace-nowrap">Call {CLINIC_INFO.phone}</span>
               </a>
 
               <a
                 href={CLINIC_URLS.repeatScriptsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-3.5 bg-amber-50 hover:bg-amber-100 text-amber-900 font-semibold text-base rounded-2xl border border-amber-200 transition-all flex items-center gap-2 hover:-translate-y-0.5"
+                className="w-full sm:w-auto px-4 sm:px-5 py-3.5 bg-amber-50 hover:bg-amber-100 text-amber-900 font-semibold text-sm sm:text-base rounded-2xl border border-amber-200 transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 whitespace-nowrap"
               >
-                <FileText className="w-4 h-4 text-amber-600" />
-                <span>Repeat Scripts</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-70" />
+                <FileText className="w-4 h-4 text-amber-600 shrink-0" />
+                <span className="whitespace-nowrap">Repeat Scripts</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-70 shrink-0" />
               </a>
             </div>
 
