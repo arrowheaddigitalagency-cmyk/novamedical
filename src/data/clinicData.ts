@@ -91,9 +91,8 @@ export const CLINIC_INFO = {
 };
 
 export const HERO_BADGES = [
-  "Now Accepting New Patients",
-  "Private Billing Practice",
   "Open 7 Days a Week",
+  "Quality Healthcare in Stirling",
 ];
 
 export const HIGHLIGHT_CARDS = [

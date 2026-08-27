@@ -19,7 +19,8 @@ export default function ContactSection() {
   }, []);
 
   return (
-    <section id="contact" className="py-16 lg:py-24 bg-white border-b border-emerald-100/60">
+    <section id="contact" className="py-16 lg:py-24 bg-white border-b border-emerald-100/60 scroll-mt-20">
+      <div id="openinghours" className="scroll-mt-28" />
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">

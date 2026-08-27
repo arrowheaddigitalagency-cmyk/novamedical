@@ -55,28 +55,35 @@ export default function MobileDrawer({
             onClick={onClose}
             className="text-lg font-semibold text-slate-800 hover:text-[#18893B] py-2 border-b border-slate-100"
           >
-            Our Services
+            our services
           </Link>
           <Link
             href="/#doctors"
             onClick={onClose}
             className="text-lg font-semibold text-slate-800 hover:text-[#18893B] py-2 border-b border-slate-100"
           >
-            Meet Our Doctors
+            our doctors
+          </Link>
+          <Link
+            href="/#openinghours"
+            onClick={onClose}
+            className="text-lg font-semibold text-slate-800 hover:text-[#18893B] py-2 border-b border-slate-100"
+          >
+            opening times
           </Link>
           <Link
             href="/fees"
             onClick={onClose}
             className="text-lg font-semibold text-slate-800 hover:text-[#18893B] py-2 border-b border-slate-100"
           >
-            Fees &amp; Billing
+            Fees
           </Link>
           <Link
             href="/contact"
             onClick={onClose}
             className="text-lg font-semibold text-slate-800 hover:text-[#18893B] py-2 border-b border-slate-100"
           >
-            Contact &amp; Directions
+            contact
           </Link>
         </nav>
 

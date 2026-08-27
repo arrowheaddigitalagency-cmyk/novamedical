@@ -53,8 +53,8 @@ export default function Header() {
               <NovaLogo className="h-12 sm:h-14 md:h-16 w-auto" />
             </Link>
 
-            {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-8 text-[15px] font-medium text-slate-700">
+            {/* Desktop Navigation Links - Mirroring Original SEO & Menu Structure */}
+            <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-[15px] font-medium text-slate-700">
               <Link
                 href="/"
                 className="hover:text-[#18893B] transition-colors py-1 font-semibold text-[#18893B]"
@@ -65,13 +65,19 @@ export default function Header() {
                 href="/#services"
                 className="hover:text-[#18893B] transition-colors py-1"
               >
-                Services
+                our services
               </Link>
               <Link
                 href="/#doctors"
                 className="hover:text-[#18893B] transition-colors py-1"
               >
-                Doctors
+                our doctors
+              </Link>
+              <Link
+                href="/#openinghours"
+                className="hover:text-[#18893B] transition-colors py-1"
+              >
+                opening times
               </Link>
               <Link
                 href="/fees"
@@ -83,7 +89,7 @@ export default function Header() {
                 href="/contact"
                 className="hover:text-[#18893B] transition-colors py-1"
               >
-                Contact
+                contact
               </Link>
             </nav>
 

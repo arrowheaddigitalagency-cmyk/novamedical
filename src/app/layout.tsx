@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
+import TopHeaderBar from "@/components/layout/TopHeaderBar";
 import Footer from "@/components/layout/Footer";
 import EmergencyBanner from "@/components/layout/EmergencyBanner";
 import MobileActionBar from "@/components/layout/MobileActionBar";
@@ -158,6 +159,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-[#243244] antialiased">
+        <TopHeaderBar />
         <EmergencyBanner />
         <Header />
         <main className="flex-grow">{children}</main>

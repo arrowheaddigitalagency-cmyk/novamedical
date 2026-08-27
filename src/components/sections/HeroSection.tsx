@@ -24,34 +24,29 @@ export default function HeroSection() {
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-teal-200/20 rounded-full blur-3xl -z-10 pointer-events-none" />
 
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Status & Billing Banner */}
+        {/* Top Status Banner */}
         <div className="flex flex-wrap items-center gap-2.5 mb-6 animate-fadeIn">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-100/90 text-[#116B31] border border-emerald-200 shadow-2xs">
             <span className="w-2 h-2 rounded-full bg-[#18893B] animate-ping" />
             <span>{HERO_BADGES[0]}</span>
-          </span>
-
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/80">
-            <ShieldCheck className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-            <span>
-              <strong>Private Billing Practice</strong> • Bulk billing available for children &lt; 16 &amp; seniors &gt; 60
-            </span>
           </span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Content Area */}
           <div className="lg:col-span-7 space-y-6">
-            <h1 className="text-4xl sm:text-5xl lg:text-[58px] font-medium tracking-tight text-slate-900 leading-[1.12]">
-              Bringing Health <br className="hidden sm:inline" />
-              <span className="text-[#18893B] font-bold underline decoration-emerald-300 decoration-wavy decoration-2 underline-offset-4">
-                to life for the whole
-              </span>{" "}
-              family
-            </h1>
+            <div className="space-y-2">
+              <span className="text-xs font-bold text-[#18893B] uppercase tracking-[0.2em]">
+                Welcome to Nova Medical Centre STIRLING
+              </span>
+              <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold tracking-tight text-slate-900 leading-[1.15]">
+                Welcome to <br className="hidden sm:inline" />
+                <span className="text-[#18893B]">Nova Medical Centre</span> STIRLING
+              </h1>
+            </div>
 
-            <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal">
-              {CLINIC_INFO.heroDescription}
+            <p className="text-base sm:text-lg text-slate-700 max-w-2xl leading-relaxed font-normal">
+              Here at Nova Medical Centre Stirling, we view quality service and patient health care as one. Which is why we strive for excellence in patient care, service quality &amp; have a focus on preventive care. You can expect an unmatched level of care from our physicians and staff.
             </p>
 
             {/* Action Buttons Row */}
@@ -143,7 +138,7 @@ export default function HeroSection() {
                     </div>
                     <p className="font-bold text-slate-800 text-[11px] leading-tight">Experienced GPs</p>
                   </div>
-                  <p className="text-[10px] text-emerald-700 font-medium pl-0.5">Accepting New Patients</p>
+                  <p className="text-[10px] text-emerald-700 font-medium pl-0.5">Comprehensive Family Care</p>
                 </div>
 
                 <div className="space-y-2">
@@ -183,8 +178,8 @@ export default function HeroSection() {
               {/* Details Table */}
               <div className="space-y-3 bg-slate-50 p-4 rounded-2xl border border-slate-100">
                 <div className="flex items-center justify-between text-xs">
-                  <span className="text-slate-500 font-medium">Practice Type</span>
-                  <span className="font-semibold text-slate-800">Private Billing</span>
+                  <span className="text-slate-500 font-medium">Appointments</span>
+                  <span className="font-semibold text-slate-800">Online &amp; Phone</span>
                 </div>
                 <div className="flex items-center justify-between text-xs">
                   <span className="text-slate-500 font-medium">Walk-ins Accepted</span>
