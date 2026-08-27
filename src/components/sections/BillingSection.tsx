@@ -31,7 +31,7 @@ export default function BillingSection() {
                   Practice Type
                 </span>
                 <h3 className="text-xl font-bold text-slate-900">
-                  Private Billing Practice
+                  {CLINIC_INFO.billingType}
                 </h3>
               </div>
             </div>

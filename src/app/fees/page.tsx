@@ -70,12 +70,15 @@ export default function FeesPage() {
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338] bg-orange-50 px-3 py-1 rounded-full border border-orange-100">
                 PATIENT INFORMATION &amp; BILLING
               </span>
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-700 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
+                Private Billing Practice
+              </span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
               Fees &amp; Billing <span className="text-[#E06338]">Policy</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-700 max-w-3xl leading-relaxed font-medium">
-              Nova Medical Centre provides a mix of private and bulk billed consultations.
+              Nova Medical Centre is a <strong>Private Billing Practice</strong> that provides a mix of private and bulk billed consultations for eligible patients.
             </p>
           </div>
 

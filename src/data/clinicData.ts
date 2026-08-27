@@ -63,7 +63,7 @@ export const CLINIC_INFO = {
   established: "Medical centres since 2012",
 
   // Billing
-  billingType: "Private Billing Practice",
+  billingType: "Mixed Billing Practice",
   bulkBillingNotes: [
     "Children under 16 years of age",
     "Patients over 60 holding valid Pensioner / Healthcare / Seniors cards",
