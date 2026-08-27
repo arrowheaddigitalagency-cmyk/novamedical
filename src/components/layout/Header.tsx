@@ -93,12 +93,12 @@ export default function Header() {
               </Link>
             </nav>
 
-            {/* Right Action Bar - ICON ONLY FOR PHONE & LOCATION AS REQUESTED */}
+            {/* Right Action Bar - ICON ONLY FOR PHONE & LOCATION + SINGLE LINE BOOK NOW */}
             <div className="hidden xl:flex items-center gap-3 text-xs font-medium">
               {/* Phone Icon Button ONLY */}
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative"
+                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative shrink-0"
                 title={`Call ${CLINIC_INFO.phone}`}
                 aria-label={`Call ${CLINIC_INFO.phone}`}
               >
@@ -110,34 +110,23 @@ export default function Header() {
                 href={CLINIC_INFO.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative"
+                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative shrink-0"
                 title="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
                 aria-label="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
               >
                 <MapPin className="w-4 h-4 transition-transform group-hover:scale-110" />
               </a>
 
-              {/* Repeat Scripts Button */}
-              <a
-                href={CLINIC_URLS.repeatScriptsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 px-3 py-2 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-200/80 rounded-xl text-xs font-semibold transition-colors"
-              >
-                <FileText className="w-3.5 h-3.5 text-amber-600" />
-                <span>Repeat Scripts</span>
-              </a>
-
-              {/* Book Appointment CTA */}
+              {/* Book Appointment CTA - GUARANTEED SINGLE LINE */}
               <a
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl shadow-xs transition-all transform hover:-translate-y-0.5"
+                className="flex items-center gap-2 px-5 py-2.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl shadow-xs transition-all transform hover:-translate-y-0.5 whitespace-nowrap shrink-0"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-4 h-4 shrink-0" />
                 <span>Book Now</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
               </a>
             </div>
 
