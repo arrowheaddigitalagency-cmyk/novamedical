@@ -36,12 +36,12 @@ export default function HeroSection() {
           {/* Left Content Area */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-2">
-              <span className="text-xs font-bold text-[#18893B] uppercase tracking-[0.2em]">
+              <span className="text-xs font-bold text-[#E06338] uppercase tracking-[0.2em]">
                 Welcome to Nova Medical Centre STIRLING
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold tracking-tight text-slate-900 leading-[1.15]">
                 Welcome to <br className="hidden sm:inline" />
-                <span className="text-[#18893B]">Nova Medical Centre</span> STIRLING
+                <span className="text-[#E06338]">Nova Medical Centre</span> STIRLING
               </h1>
             </div>
 
@@ -55,7 +55,7 @@ export default function HeroSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3.5 bg-[#18893B] hover:bg-[#116B31] text-white font-bold text-base rounded-2xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-1 active:translate-y-0"
+                className="px-6 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-base rounded-2xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 transform hover:-translate-y-1 active:translate-y-0"
               >
                 <Calendar className="w-5 h-5" />
                 <span>Book Now</span>
@@ -64,9 +64,9 @@ export default function HeroSection() {
 
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="px-5 py-3.5 bg-white hover:bg-emerald-50 text-[#18893B] font-semibold text-base rounded-2xl border-2 border-emerald-200 transition-all flex items-center gap-2 shadow-2xs hover:-translate-y-0.5"
+                className="px-5 py-3.5 bg-white hover:bg-orange-50 text-[#E06338] font-semibold text-base rounded-2xl border-2 border-orange-200 transition-all flex items-center gap-2 shadow-2xs hover:-translate-y-0.5"
               >
-                <Phone className="w-4 h-4 text-[#18893B]" />
+                <Phone className="w-4 h-4 text-[#E06338]" />
                 <span>Call {CLINIC_INFO.phone}</span>
               </a>
 

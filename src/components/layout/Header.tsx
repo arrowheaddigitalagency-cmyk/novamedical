@@ -53,43 +53,43 @@ export default function Header() {
               <NovaLogo className="h-12 sm:h-14 md:h-16 w-auto" />
             </Link>
 
-            {/* Desktop Navigation Links - Mirroring Original SEO & Menu Structure */}
-            <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-[15px] font-medium text-slate-700">
+            {/* Desktop Navigation Links - Single line layout matching original color scheme */}
+            <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-semibold whitespace-nowrap">
               <Link
                 href="/"
-                className="hover:text-[#18893B] transition-colors py-1 font-semibold text-[#18893B]"
+                className="text-[#E06338] hover:text-[#C54E26] transition-colors py-1 border-b-2 border-[#E06338]"
               >
                 Home
               </Link>
               <Link
                 href="/#services"
-                className="hover:text-[#18893B] transition-colors py-1"
+                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
               >
-                our services
+                Our Services
               </Link>
               <Link
                 href="/#doctors"
-                className="hover:text-[#18893B] transition-colors py-1"
+                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
               >
-                our doctors
+                Our Doctors
               </Link>
               <Link
                 href="/#openinghours"
-                className="hover:text-[#18893B] transition-colors py-1"
+                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
               >
-                opening times
+                Opening Times
               </Link>
               <Link
                 href="/fees"
-                className="hover:text-[#18893B] transition-colors py-1"
+                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
               >
                 Fees
               </Link>
               <Link
                 href="/contact"
-                className="hover:text-[#18893B] transition-colors py-1"
+                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
               >
-                contact
+                Contact
               </Link>
             </nav>
 
@@ -133,7 +133,7 @@ export default function Header() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2.5 bg-[#18893B] hover:bg-[#116B31] text-white font-bold text-sm rounded-xl shadow-xs transition-all transform hover:-translate-y-0.5"
+                className="flex items-center gap-2 px-4 py-2.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl shadow-xs transition-all transform hover:-translate-y-0.5"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Now</span>
@@ -147,7 +147,7 @@ export default function Header() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3.5 py-2 bg-[#18893B] hover:bg-[#116B31] text-white font-bold text-xs sm:text-sm rounded-xl transition-all"
+                className="hidden sm:flex items-center gap-1.5 px-3.5 py-2 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-xs sm:text-sm rounded-xl transition-all"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Now</span>

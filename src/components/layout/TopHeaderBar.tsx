@@ -11,21 +11,21 @@ export default function TopHeaderBar() {
             href={CLINIC_INFO.googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-1.5 hover:text-[#19BFC4] transition-colors"
+            className="flex items-center gap-1.5 hover:text-[#E06338] transition-colors"
           >
-            <MapPin className="w-3.5 h-3.5 text-[#19BFC4] shrink-0" />
+            <MapPin className="w-3.5 h-3.5 text-[#E06338] shrink-0" />
             <span>31 Cedric Street, Stirling</span>
           </a>
 
           <a
             href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-            className="flex items-center gap-1.5 hover:text-[#19BFC4] transition-colors font-semibold text-white"
+            className="flex items-center gap-1.5 hover:text-[#E06338] transition-colors font-semibold text-white"
           >
-            <Phone className="w-3.5 h-3.5 text-[#19BFC4] shrink-0" />
+            <Phone className="w-3.5 h-3.5 text-[#E06338] shrink-0" />
             <span>(08) 9349 9900</span>
           </a>
 
-          <div className="flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <div className="flex items-center gap-1.5 text-[#E06338] font-semibold">
             <Clock className="w-3.5 h-3.5 shrink-0" />
             <span>Open 7 Days</span>
           </div>

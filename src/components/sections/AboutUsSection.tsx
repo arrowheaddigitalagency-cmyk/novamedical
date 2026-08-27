@@ -23,11 +23,11 @@ export default function AboutUsSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#18893B]">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338]">
             GET TO KNOW US
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-            about <span className="text-[#18893B]">Us</span>
+            about <span className="text-[#E06338]">us</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
             At Nova Medical Centres, we view quality service and patient health care as one.
@@ -48,18 +48,18 @@ export default function AboutUsSection() {
               </p>
 
               <p>
-                Our first clinic opened in Northbridge in 2012, followed by our second &amp; third clinic in Stirling &amp; Manning and we proudly announce that our fourth clinic in Greenwood is opening in January 2023. We look forward to bringing medical centres in other areas in the near future .
+                Our first clinic opened in <span className="text-[#E06338] font-semibold">Northbridge</span> in <span className="text-[#E06338] font-semibold">2012</span>, followed by our second &amp; third clinic in <span className="text-[#E06338] font-semibold">Stirling &amp; Manning</span> and we proudly announce that our fourth clinic in <span className="text-[#E06338] font-semibold">Greenwood</span> is opening in January 2023. We look forward to bringing medical centres in other areas in the near future .
               </p>
             </div>
 
             {/* In-House Specialist Highlight Box */}
-            <div className="bg-emerald-50/80 p-5 rounded-2xl border border-emerald-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-[#18893B] font-bold text-sm sm:text-base">
-                <Sparkles className="w-5 h-5 text-[#18893B]" />
+            <div className="bg-orange-50/80 p-5 rounded-2xl border border-orange-200/80 space-y-2">
+              <div className="flex items-center gap-2 text-[#E06338] font-bold text-sm sm:text-base">
+                <Sparkles className="w-5 h-5 text-[#E06338]" />
                 <span>Specialist Care On-Site</span>
               </div>
               <p className="text-xs sm:text-sm text-slate-800 font-semibold leading-relaxed">
-                We also have in house Consultant Paediatrician, Consultant Psychiatrist &amp; Clinical Psychologist.
+                We also have in house <span className="text-[#E06338]">Consultant Paediatrician</span>, <span className="text-[#E06338]">Consultant Psychiatrist</span> &amp; <span className="text-[#E06338]">Clinical Psychologist</span>.
               </p>
             </div>
           </div>
