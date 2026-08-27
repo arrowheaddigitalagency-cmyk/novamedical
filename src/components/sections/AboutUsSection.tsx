@@ -79,7 +79,7 @@ export default function AboutUsSection() {
 
               <div className="space-y-4 text-xs sm:text-sm">
                 <div className="flex items-start gap-3">
-                  <span className="px-2.5 py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2012</span>
+                  <span className="w-24 text-center py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2012</span>
                   <div>
                     <strong className="text-white block">Northbridge Clinic</strong>
                     <span className="text-slate-300">Our very first medical centre launched</span>
@@ -87,7 +87,7 @@ export default function AboutUsSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <span className="px-2.5 py-1 bg-amber-500 text-slate-900 font-bold rounded-lg text-xs shrink-0 mt-0.5">Expansion</span>
+                  <span className="w-24 text-center py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">Expansion</span>
                   <div>
                     <strong className="text-white block">Stirling &amp; Manning Clinics</strong>
                     <span className="text-slate-300">Established to serve local Stirling community</span>
@@ -95,7 +95,7 @@ export default function AboutUsSection() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <span className="px-2.5 py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2023</span>
+                  <span className="w-24 text-center py-1 bg-[#E06338] text-white font-bold rounded-lg text-xs shrink-0 mt-0.5">2023</span>
                   <div>
                     <strong className="text-white block">Greenwood Clinic</strong>
                     <span className="text-slate-300">Fourth clinic opened in January 2023</span>
