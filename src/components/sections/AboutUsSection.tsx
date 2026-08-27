@@ -1,23 +1,7 @@
 import React from "react";
-import { Building2, Heart, Users, Sparkles, Tag } from "lucide-react";
+import { Building2 } from "lucide-react";
 
 export default function AboutUsSection() {
-  const seoKeywords = [
-    "Nova Medical centre Stirling",
-    "Medical Clinic",
-    "Medical Doctor",
-    "Medical centre",
-    "Stirling Medical Centre",
-    "Balcatta Medical Centre",
-    "Stirling Doctors",
-    "Nova Clinic",
-    "Cedric street medical clinic",
-    "Cedric street GP",
-    "Doctor near me",
-    "medical centre near me",
-    "Vaccination Clinic",
-  ];
-
   return (
     <section id="about" className="py-16 lg:py-20 bg-gradient-to-b from-white via-slate-50/50 to-white border-b border-slate-100">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -50,16 +34,13 @@ export default function AboutUsSection() {
               <p>
                 Our first clinic opened in <span className="text-[#E06338] font-semibold">Northbridge</span> in <span className="text-[#E06338] font-semibold">2012</span>, followed by our second &amp; third clinic in <span className="text-[#E06338] font-semibold">Stirling &amp; Manning</span> and we proudly announce that our fourth clinic in <span className="text-[#E06338] font-semibold">Greenwood</span> is opening in January 2023. We look forward to bringing medical centres in other areas in the near future .
               </p>
-            </div>
 
-            {/* In-House Specialist Highlight Box */}
-            <div className="bg-orange-50/80 p-5 rounded-2xl border border-orange-200/80 space-y-2">
-              <div className="flex items-center gap-2 text-[#E06338] font-bold text-sm sm:text-base">
-                <Sparkles className="w-5 h-5 text-[#E06338]" />
-                <span>Specialist Care On-Site</span>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-800 font-semibold leading-relaxed">
-                We also have in house <span className="text-[#E06338]">Consultant Paediatrician</span>, <span className="text-[#E06338]">Consultant Psychiatrist</span> &amp; <span className="text-[#E06338]">Clinical Psychologist</span>.
+              <p>
+                We also have in house <span className="text-[#E06338] font-semibold">Consultant Paediatrician</span>, <span className="text-[#E06338] font-semibold">Consultant Psychiatrist</span> &amp; <span className="text-[#E06338] font-semibold">Clinical Psychologist</span>.
+              </p>
+
+              <p className="text-sm text-slate-600 pt-2 border-t border-slate-100">
+                Nova Medical centre Stirling, Medical Clinic, Medical Doctor, Medical centre, Stirling Medical Centre, Balcatta Medical Centre, Stirling Doctors, Nova Clinic, Cedric street medical clinic, Cedric street GP, Doctor near me, medical centre near me, Vaccination Clinic.
               </p>
             </div>
           </div>
@@ -103,24 +84,6 @@ export default function AboutUsSection() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* SEO Keywords Footer Bar (Preserving original search visibility keywords) */}
-        <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-2xs space-y-3">
-          <div className="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-wider">
-            <Tag className="w-4 h-4 text-[#E06338]" />
-            <span>Search &amp; Location Keywords</span>
-          </div>
-          <div className="flex flex-wrap gap-2 pt-1">
-            {seoKeywords.map((keyword, index) => (
-              <span
-                key={index}
-                className="px-3 py-1.5 bg-slate-100/80 hover:bg-orange-50 text-slate-700 hover:text-[#E06338] text-xs font-medium rounded-xl border border-slate-200/60 transition-colors"
-              >
-                {keyword}
-              </span>
-            ))}
           </div>
         </div>
       </div>
