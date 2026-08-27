@@ -144,6 +144,8 @@ const jsonLd = {
   ],
 };
 
+import SmoothScroll from "@/components/layout/SmoothScroll";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -159,6 +161,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-white text-[#243244] antialiased">
+        <SmoothScroll />
         <TopHeaderBar />
         <EmergencyBanner />
         <Header />
