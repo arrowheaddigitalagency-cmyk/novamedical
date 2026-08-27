@@ -106,19 +106,19 @@ export default function BillingSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-3 px-4 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-4 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-2 whitespace-nowrap"
               >
-                <Calendar className="w-4 h-4" />
-                <span>Book Appointment</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80" />
+                <Calendar className="w-4 h-4 shrink-0" />
+                <span className="whitespace-nowrap">Book Appointment</span>
+                <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
               </a>
 
               <Link
                 href="/fees"
-                className="py-3 px-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-1.5"
+                className="py-3 px-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-1.5 whitespace-nowrap"
               >
-                <HelpCircle className="w-4 h-4 text-[#19BFC4]" />
-                <span>Fees Policy</span>
+                <HelpCircle className="w-4 h-4 text-[#19BFC4] shrink-0" />
+                <span className="whitespace-nowrap">Fees Policy</span>
               </Link>
             </div>
           </div>
