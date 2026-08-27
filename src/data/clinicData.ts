@@ -224,7 +224,8 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Supportive mental health services, counseling referrals, and personalized care plans.",
     iconName: "Brain",
     accentColor: "purple",
-    hasPage: false,
+    slug: "mental-health",
+    hasPage: true,
     details: [
       "Medicare Mental Health Care Plans (GP Mental Health Treatment Plan)",
       "Depression and anxiety management",
@@ -238,7 +239,8 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Worker's compensation management, pre-employment assessments, and workplace health.",
     iconName: "Briefcase",
     accentColor: "orange",
-    hasPage: false,
+    slug: "corporate-medicals",
+    hasPage: true,
     details: [
       "Pre-employment medical examinations",
       "Fly-In Fly-Out (FIFO) medical assessments",
@@ -252,7 +254,8 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Confidential STI/STD testing, contraception advice, and sexual wellbeing care.",
     iconName: "Activity",
     accentColor: "pink",
-    hasPage: false,
+    slug: "sexual-health",
+    hasPage: true,
     details: [
       "Confidential STI screening and treatment",
       "Contraceptive options & counseling",
@@ -280,7 +283,8 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Convenient in-clinic pathology collection services for blood tests and diagnostics.",
     iconName: "FlaskConical",
     accentColor: "blue",
-    hasPage: false,
+    slug: "onsite-pathology",
+    hasPage: true,
     details: [
       "Blood test collections",
       "ECG and diagnostic testing",
