@@ -122,7 +122,7 @@ export default function SkinCancerScreeningPage() {
               <div className="lg:col-span-5 space-y-6">
                 <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-md">
                   <img
-                    src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                    src="/images/services/skin-cancer-1.jpg"
                     alt="Sun protection and skin safety on beach"
                     className="w-full h-auto object-cover"
                   />
@@ -143,7 +143,7 @@ export default function SkinCancerScreeningPage() {
                 {/* Bottom Awareness Image Poster */}
                 <div className="pt-4 overflow-hidden rounded-2xl border border-slate-100 shadow-md">
                   <img
-                    src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+                    src="/images/services/skin-cancer-2.png"
                     alt="Skin Cancer awareness SunSmart poster"
                     className="w-full h-auto object-cover"
                   />

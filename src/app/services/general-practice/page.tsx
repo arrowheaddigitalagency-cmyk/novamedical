@@ -97,7 +97,7 @@ export default function GeneralPracticePage() {
             <div className="lg:col-span-5 space-y-6">
               <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-md">
                 <img
-                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
+                  src="/images/services/general-practice.jpg"
                   alt="General Practice doctor consultation at Nova Medical Centre Stirling"
                   className="w-full h-auto object-cover"
                 />

@@ -88,7 +88,7 @@ export default function OnsitePathologyPage() {
               <div className="lg:col-span-5 space-y-6">
                 <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-md">
                   <img
-                    src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80"
+                    src="/images/services/onsite-pathology.jpg"
                     alt="Pathology nurse drawing blood sample"
                     className="w-full h-auto object-cover"
                   />

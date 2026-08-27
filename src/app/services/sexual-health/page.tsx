@@ -149,7 +149,7 @@ export default function SexualHealthPage() {
               <div className="lg:col-span-5 space-y-6">
                 <div className="overflow-hidden rounded-2xl border border-slate-100 shadow-md">
                   <img
-                    src="https://images.unsplash.com/photo-1516585427167-9f4af9627e6c?auto=format&fit=crop&w=800&q=80"
+                    src="/images/services/sexual-health.jpg"
                     alt="Couple smiling on grass - Healthy Relationships and Sexual Health"
                     className="w-full h-auto object-cover"
                   />
