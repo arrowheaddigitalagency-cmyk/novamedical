@@ -92,9 +92,24 @@ export default function ServiceCard({ service, onSelect }: ServiceCardProps) {
         </div>
       </div>
 
-      <div className="pt-4 flex items-center gap-1 text-xs font-semibold group-hover:translate-x-1 transition-all text-[#18893B]">
-        <span>Learn More</span>
-        <ChevronRight className="w-3.5 h-3.5" />
+      <div className="pt-4 flex items-center justify-between gap-2">
+        <button
+          onClick={() => onSelect(service)}
+          className="flex items-center gap-1 text-xs font-semibold group-hover:translate-x-0.5 transition-all text-slate-600 hover:text-[#E06338]"
+        >
+          <span>Learn More</span>
+          <ChevronRight className="w-3.5 h-3.5" />
+        </button>
+
+        <a
+          href="https://novamedical.com.au/booking-online/"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="px-3.5 py-1.5 bg-[#E06338] hover:bg-[#C54E26] text-white text-xs font-bold rounded-xl transition-all shadow-2xs hover:shadow flex items-center gap-1"
+        >
+          <span>Book Online</span>
+        </a>
       </div>
     </div>
   );
