@@ -1,6 +1,5 @@
-"use client";
-
 import React from "react";
+import Link from "next/link";
 import {
   Users,
   Baby,
@@ -93,13 +92,18 @@ export default function ServiceCard({ service, onSelect }: ServiceCardProps) {
       </div>
 
       <div className="pt-4 flex items-center justify-between gap-2">
-        <button
-          onClick={() => onSelect(service)}
-          className="flex items-center gap-1 text-xs font-semibold group-hover:translate-x-0.5 transition-all text-slate-600 hover:text-[#E06338]"
-        >
-          <span>Learn More</span>
-          <ChevronRight className="w-3.5 h-3.5" />
-        </button>
+        {service.hasPage && service.slug ? (
+          <Link
+            href={`/services/${service.slug}`}
+            onClick={(e) => e.stopPropagation()}
+            className="flex items-center gap-1 text-xs font-bold text-[#E06338] group-hover:translate-x-0.5 transition-all hover:underline"
+          >
+            <span>Learn More</span>
+            <ChevronRight className="w-3.5 h-3.5" />
+          </Link>
+        ) : (
+          <div />
+        )}
 
         <a
           href="https://novamedical.com.au/booking-online/"

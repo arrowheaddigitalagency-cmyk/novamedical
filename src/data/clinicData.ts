@@ -17,6 +17,8 @@ export interface Service {
   iconName: string;
   accentColor: 'blue' | 'pink' | 'purple' | 'teal' | 'orange' | 'yellow' | 'green';
   details?: string[];
+  slug?: string;
+  hasPage?: boolean;
 }
 
 export interface OpeningHourItem {
@@ -133,6 +135,8 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Comprehensive care for all ages, from children to seniors, focusing on holistic health.",
     iconName: "Users",
     accentColor: "blue",
+    slug: "general-practice",
+    hasPage: true,
     details: [
       "Routine consultations and check-ups",
       "Preventive health checks & advice",
@@ -141,11 +145,72 @@ export const PRIMARY_SERVICES: Service[] = [
     ],
   },
   {
+    id: "lip-tongue-tie",
+    title: "Lip & Tongue Tie (Oral Frenectomy)",
+    description: "Infant oral frenectomy screening and release procedure for children under 1 year.",
+    iconName: "Baby",
+    accentColor: "pink",
+    slug: "lip-and-tongue-tie",
+    hasPage: true,
+    details: [
+      "Infant tongue & lip tie evaluation",
+      "Low-risk release procedure",
+      "Screening with Dr Hira Shehzad",
+      "Post-procedure recovery care",
+    ],
+  },
+  {
+    id: "iud-mirena",
+    title: "IUD & Mirena Insertion & Removal",
+    description: "Long-acting reversible contraception services by experienced female GPs.",
+    iconName: "Sparkles",
+    accentColor: "purple",
+    slug: "iud-mirena-insertion",
+    hasPage: true,
+    details: [
+      "Mirena, Kyleena & Copper IUD options",
+      "Consultation & prescription assessment",
+      "In-clinic insertion with local anaesthetic",
+      "IUD removal & contraceptive advice",
+    ],
+  },
+  {
+    id: "skin-check",
+    title: "Skin Check Clinic & Excision",
+    description: "Comprehensive skin cancer screening, mole checks, dermoscopy, and excision.",
+    iconName: "Sun",
+    accentColor: "yellow",
+    slug: "skin-cancer-screening",
+    hasPage: true,
+    details: [
+      "Full body skin checks with dermoscopy",
+      "Early skin cancer detection & biopsy",
+      "Cryotherapy and lesion treatments",
+      "Sun protection & skin advice",
+    ],
+  },
+  {
+    id: "travel-clinic",
+    title: "Travel Clinic & Vaccinations",
+    description: "Pre-travel consultations, destination-specific advice, and Yellow Fever vaccinations.",
+    iconName: "Plane",
+    accentColor: "teal",
+    slug: "travel-medicine",
+    hasPage: true,
+    details: [
+      "Yellow Fever accredited vaccination center",
+      "Pre-travel medical advice & prescriptions",
+      "Malaria prophylaxis & travel kit guidance",
+      "Post-travel health assessments",
+    ],
+  },
+  {
     id: "children-health",
     title: "Children & Adolescent Health",
     description: "Specialized pediatric care, developmental milestone monitoring, and immunizations.",
     iconName: "Baby",
     accentColor: "pink",
+    hasPage: false,
     details: [
       "Childhood immunizations & vaccinations",
       "Growth and developmental checks",
@@ -159,6 +224,7 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Supportive mental health services, counseling referrals, and personalized care plans.",
     iconName: "Brain",
     accentColor: "purple",
+    hasPage: false,
     details: [
       "Medicare Mental Health Care Plans (GP Mental Health Treatment Plan)",
       "Depression and anxiety management",
@@ -167,24 +233,12 @@ export const PRIMARY_SERVICES: Service[] = [
     ],
   },
   {
-    id: "travel-clinic",
-    title: "Travel Clinic & Vaccinations",
-    description: "Pre-travel consultations, destination-specific advice, and required vaccinations including Yellow Fever.",
-    iconName: "Plane",
-    accentColor: "teal",
-    details: [
-      "Yellow Fever accredited vaccination center",
-      "Pre-travel medical advice & prescriptions",
-      "Malaria prophylaxis & travel kit guidance",
-      "Post-travel health assessments",
-    ],
-  },
-  {
     id: "corporate-medicals",
     title: "Corporate Medicals & Worker's Comp",
     description: "Worker's compensation management, pre-employment assessments, and workplace health.",
     iconName: "Briefcase",
     accentColor: "orange",
+    hasPage: false,
     details: [
       "Pre-employment medical examinations",
       "Fly-In Fly-Out (FIFO) medical assessments",
@@ -193,24 +247,12 @@ export const PRIMARY_SERVICES: Service[] = [
     ],
   },
   {
-    id: "skin-check",
-    title: "Skin Check Clinic",
-    description: "Comprehensive skin cancer screening, mole checks, and dermoscopy assessments.",
-    iconName: "Sun",
-    accentColor: "yellow",
-    details: [
-      "Full body skin checks with dermoscopy",
-      "Early skin cancer detection & biopsy",
-      "Cryotherapy and lesion treatments",
-      "Sun protection & skin advice",
-    ],
-  },
-  {
     id: "sexual-health",
     title: "Sexual Health Services",
     description: "Confidential STI/STD testing, contraception advice, and sexual wellbeing care.",
     iconName: "Activity",
     accentColor: "pink",
+    hasPage: false,
     details: [
       "Confidential STI screening and treatment",
       "Contraceptive options & counseling",
@@ -224,6 +266,7 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Ongoing structured care for diabetes, heart disease, asthma, and chronic conditions.",
     iconName: "HeartPulse",
     accentColor: "teal",
+    hasPage: false,
     details: [
       "GP Management Plans (GPMP)",
       "Team Care Arrangements (TCA)",
@@ -237,6 +280,7 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Convenient in-clinic pathology collection services for blood tests and diagnostics.",
     iconName: "FlaskConical",
     accentColor: "blue",
+    hasPage: false,
     details: [
       "Blood test collections",
       "ECG and diagnostic testing",
@@ -250,6 +294,7 @@ export const PRIMARY_SERVICES: Service[] = [
     description: "Gender-specific health screenings, hormone management, and wellness checks.",
     iconName: "Sparkles",
     accentColor: "purple",
+    hasPage: false,
     details: [
       "Women's health, Pap/cervical screening & menopause care",
       "Men's health, prostate screening & cardiovascular risk",
