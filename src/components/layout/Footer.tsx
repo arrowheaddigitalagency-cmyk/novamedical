@@ -180,7 +180,7 @@ export default function Footer() {
               href={CLINIC_URLS.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-2.5 px-4 bg-[#18893B] hover:bg-[#116B31] text-white font-bold text-sm rounded-xl transition-all shadow-xs text-center flex items-center justify-center gap-1.5"
+              className="w-full py-2.5 px-4 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl transition-all shadow-xs text-center flex items-center justify-center gap-1.5"
             >
               <span>Book Appointment</span>
               <ExternalLink className="w-3.5 h-3.5 opacity-80" />

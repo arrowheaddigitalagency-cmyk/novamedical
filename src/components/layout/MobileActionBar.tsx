@@ -8,7 +8,7 @@ export default function MobileActionBar() {
       {/* Call Button */}
       <a
         href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-        className="flex-1 py-3 px-3 bg-emerald-50 border border-emerald-200 text-[#18893B] font-semibold text-sm rounded-xl flex items-center justify-center gap-2 active:bg-emerald-100 transition-colors"
+        className="flex-1 py-3 px-3 bg-orange-50 border border-orange-200 text-[#E06338] font-semibold text-sm rounded-xl flex items-center justify-center gap-2 active:bg-orange-100 transition-colors"
       >
         <Phone className="w-4 h-4 shrink-0" />
         <span>Call Clinic</span>
@@ -19,7 +19,7 @@ export default function MobileActionBar() {
         href={CLINIC_URLS.bookingUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 py-3 px-3 bg-[#18893B] text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 active:bg-[#116B31] shadow-md transition-colors"
+        className="flex-1 py-3 px-3 bg-[#E06338] text-white font-bold text-sm rounded-xl flex items-center justify-center gap-2 active:bg-[#C54E26] shadow-md transition-colors"
       >
         <Calendar className="w-4 h-4 shrink-0" />
         <span>Book Appointment</span>

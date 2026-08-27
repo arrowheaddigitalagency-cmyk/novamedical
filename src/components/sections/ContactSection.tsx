@@ -163,7 +163,7 @@ export default function ContactSection() {
             </div>
 
             {/* Ready to Book Banner (FLUSH WITH BOTTOM LINE) */}
-            <div className="bg-gradient-to-r from-[#18893B] to-[#116B31] text-white p-5 rounded-2xl shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
+            <div className="bg-gradient-to-r from-[#E06338] to-[#C54E26] text-white p-5 rounded-2xl shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
               <div>
                 <h4 className="font-bold text-base">Ready to book?</h4>
                 <p className="text-xs text-white/90">
@@ -174,7 +174,7 @@ export default function ContactSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 bg-white text-[#18893B] hover:bg-slate-100 font-bold text-xs rounded-xl shadow-2xs transition-all shrink-0 flex items-center gap-1.5"
+                className="px-5 py-2.5 bg-white text-[#E06338] hover:bg-slate-100 font-bold text-xs rounded-xl shadow-2xs transition-all shrink-0 flex items-center gap-1.5"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Now</span>
@@ -185,7 +185,7 @@ export default function ContactSection() {
         </div>
 
         {/* After-Hours & Feedback Notices */}
-        <div className="pt-6 border-t border-emerald-100/60 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-600">
+        <div className="pt-6 border-t border-orange-100/60 grid grid-cols-1 md:grid-cols-2 gap-4 text-xs text-slate-600">
           {/* After-Hours Care Notice */}
           <div className="glass-box p-4 rounded-xl space-y-1">
             <span className="font-bold text-slate-800 block">
@@ -196,7 +196,7 @@ export default function ContactSection() {
               <strong className="text-slate-800">{CLINIC_INFO.afterHours.service}</strong> on{" "}
               <a
                 href={`tel:${CLINIC_INFO.afterHours.phone.replace(/\s+/g, "")}`}
-                className="font-bold text-[#18893B] underline"
+                className="font-bold text-[#E06338] underline"
               >
                 {CLINIC_INFO.afterHours.phone}
               </a>{" "}

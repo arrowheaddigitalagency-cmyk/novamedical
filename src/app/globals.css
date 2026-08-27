@@ -2,16 +2,16 @@
 
 @layer base {
   :root {
-    --primary-green: #18893B;
-    --deep-green: #116B31;
-    --fresh-green: #29A84A;
+    --primary-green: #E06338;
+    --deep-green: #C54E26;
+    --fresh-green: #F57C53;
     --aqua-cyan: #19BFC4;
-    --orange-accent: #F59A3C;
+    --orange-accent: #E06338;
     --pink-accent: #EF4D78;
     --purple-accent: #7856D8;
     --deep-navy: #10182D;
-    --soft-bg: #F7FAF9;
-    --card-bg: #F7F9FB;
+    --soft-bg: #FDF8F6;
+    --card-bg: #FFFBF9;
     --main-text: #243244;
     --muted-text: #64748B;
   }
@@ -46,13 +46,13 @@
   background: #94a3b8;
 }
 
-/* Glassy box utility with light green border & very light shadow */
+/* Glassy box utility with orange border & very light shadow */
 .glass-box {
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(24, 137, 59, 0.2);
-  box-shadow: 0 4px 16px -2px rgba(24, 137, 59, 0.04), 0 2px 6px -1px rgba(16, 24, 45, 0.02);
+  border: 1px solid rgba(224, 99, 56, 0.2);
+  box-shadow: 0 4px 16px -2px rgba(224, 99, 56, 0.04), 0 2px 6px -1px rgba(16, 24, 45, 0.02);
 }
 
 .glass-box-hover {
@@ -60,22 +60,22 @@
 }
 .glass-box-hover:hover {
   background: rgba(255, 255, 255, 0.98);
-  border-color: rgba(24, 137, 59, 0.4);
-  box-shadow: 0 8px 24px -4px rgba(24, 137, 59, 0.08), 0 4px 12px -2px rgba(16, 24, 45, 0.03);
+  border-color: rgba(224, 99, 56, 0.4);
+  box-shadow: 0 8px 24px -4px rgba(224, 99, 56, 0.08), 0 4px 12px -2px rgba(16, 24, 45, 0.03);
   transform: translateY(-2px);
 }
 
 /* Soft backdrop blur & subtle shadows */
 .shadow-soft {
-  box-shadow: 0 4px 16px -2px rgba(24, 137, 59, 0.04), 0 2px 6px -1px rgba(16, 24, 45, 0.02);
+  box-shadow: 0 4px 16px -2px rgba(224, 99, 56, 0.04), 0 2px 6px -1px rgba(16, 24, 45, 0.02);
 }
 
 .shadow-card {
-  box-shadow: 0 6px 20px -4px rgba(24, 137, 59, 0.06);
+  box-shadow: 0 6px 20px -4px rgba(224, 99, 56, 0.06);
 }
 
 .shadow-card-hover {
-  box-shadow: 0 10px 25px -5px rgba(24, 137, 59, 0.09);
+  box-shadow: 0 10px 25px -5px rgba(224, 99, 56, 0.09);
 }
 
 /* Infinite marquee keyframe animation for continuous smooth logo slider */
@@ -96,6 +96,6 @@
 
 /* Focus outline for WCAG accessibility */
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
-  outline: 2px solid #18893B;
+  outline: 2px solid #E06338;
   outline-offset: 2px;
 }

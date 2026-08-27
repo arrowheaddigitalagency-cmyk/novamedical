@@ -20,11 +20,11 @@ export default function ServicesSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#19BFC4]">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338]">
             WHAT WE OFFER
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-            Our <span className="text-[#18893B]">Services</span>
+            Our <span className="text-[#E06338]">Services</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             From routine check-ups to specialized care, we offer a comprehensive range of medical services to meet all your healthcare needs.
@@ -43,10 +43,10 @@ export default function ServicesSection() {
         </div>
 
         {/* In-House Specialist Consultants Highlights */}
-        <div className="bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50 p-6 sm:p-8 rounded-3xl border border-emerald-100/80 shadow-2xs space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-emerald-200/60 pb-4">
+        <div className="bg-gradient-to-r from-orange-50 via-amber-50 to-orange-50 p-6 sm:p-8 rounded-3xl border border-orange-200/80 shadow-2xs space-y-4">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-orange-200/60 pb-4">
             <div className="flex items-center gap-3">
-              <div className="p-2.5 bg-[#18893B] text-white rounded-xl shadow-xs">
+              <div className="p-2.5 bg-[#E06338] text-white rounded-xl shadow-xs">
                 <Sparkles className="w-5 h-5" />
               </div>
               <div>
@@ -62,7 +62,7 @@ export default function ServicesSection() {
               href={CLINIC_URLS.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="py-2.5 px-4 bg-[#18893B] hover:bg-[#116B31] text-white text-xs font-bold rounded-xl transition-colors shadow-xs shrink-0 inline-flex items-center gap-1.5"
+              className="py-2.5 px-4 bg-[#E06338] hover:bg-[#C54E26] text-white text-xs font-bold rounded-xl transition-colors shadow-xs shrink-0 inline-flex items-center gap-1.5"
             >
               <span>Book Specialist Consult</span>
               <ExternalLink className="w-3.5 h-3.5 opacity-80" />
@@ -73,9 +73,9 @@ export default function ServicesSection() {
             {INHOUSE_SPECIALISTS.map((specialist, idx) => (
               <div
                 key={idx}
-                className="bg-white p-3.5 rounded-xl border border-emerald-100 flex items-center gap-2.5 text-xs font-semibold text-slate-800 shadow-2xs"
+                className="bg-white p-3.5 rounded-xl border border-orange-100 flex items-center gap-2.5 text-xs font-semibold text-slate-800 shadow-2xs"
               >
-                <CheckCircle2 className="w-4 h-4 text-[#18893B] shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-[#E06338] shrink-0" />
                 <span>{specialist}</span>
               </div>
             ))}

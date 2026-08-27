@@ -8,11 +8,11 @@ export default function BillingSection() {
     <section className="py-16 lg:py-20 bg-white border-b border-slate-100">
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#18893B]">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338]">
             PATIENT INFORMATION
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-            Fees &amp; <span className="text-[#18893B]">Billing Policy</span>
+            Fees &amp; <span className="text-[#E06338]">Billing Policy</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             Transparent patient billing information for Nova Medical Centre Stirling.
@@ -21,9 +21,9 @@ export default function BillingSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left Card: Billing Type & Eligibility */}
-          <div className="lg:col-span-7 bg-[#F7F9FB] p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-soft space-y-6">
+          <div className="lg:col-span-7 bg-[#FFFBF9] p-6 sm:p-8 rounded-3xl border border-orange-100 shadow-soft space-y-6">
             <div className="flex items-center gap-3 border-b border-slate-200/80 pb-4">
-              <div className="p-3 bg-emerald-100 text-[#18893B] rounded-2xl">
+              <div className="p-3 bg-orange-100 text-[#E06338] rounded-2xl">
                 <CreditCard className="w-6 h-6" />
               </div>
               <div>
@@ -46,7 +46,7 @@ export default function BillingSection() {
                     key={index}
                     className="bg-white p-3.5 rounded-xl border border-slate-200/80 flex items-start gap-3 shadow-2xs"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-[#18893B] shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-[#E06338] shrink-0 mt-0.5" />
                     <span className="text-sm font-medium text-slate-800">
                       {note}
                     </span>
@@ -56,8 +56,8 @@ export default function BillingSection() {
             </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-4 text-xs text-slate-600 border-t border-slate-200/80">
-              <span className="flex items-center gap-1.5 font-semibold text-emerald-800 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-100">
-                <ShieldCheck className="w-4 h-4 text-[#18893B]" />
+              <span className="flex items-center gap-1.5 font-semibold text-orange-900 bg-orange-50 px-3 py-1.5 rounded-lg border border-orange-100">
+                <ShieldCheck className="w-4 h-4 text-[#E06338]" />
                 Registered Medicare Provider
               </span>
               <span>EFTPOS &amp; Medicare Instant Rebate Available</span>
@@ -85,7 +85,7 @@ export default function BillingSection() {
                 <span>Phone Reception:</span>
                 <a
                   href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                  className="font-bold text-[#19BFC4] hover:underline"
+                  className="font-bold text-[#E06338] hover:underline"
                 >
                   {CLINIC_INFO.phone}
                 </a>
@@ -106,7 +106,7 @@ export default function BillingSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 py-3 px-4 bg-[#18893B] hover:bg-[#116B31] text-white font-bold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-2"
+                className="flex-1 py-3 px-4 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl text-sm transition-colors text-center flex items-center justify-center gap-2"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Appointment</span>
