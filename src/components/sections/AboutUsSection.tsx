@@ -11,7 +11,7 @@ export default function AboutUsSection() {
             GET TO KNOW US
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-            about <span className="text-[#e6704a]">us</span>
+            About <span className="text-[#e6704a]">us</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-medium">
             At Nova Medical Centres, we view quality service and patient health care as one.
