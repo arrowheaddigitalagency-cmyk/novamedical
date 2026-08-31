@@ -37,7 +37,7 @@ export default function DoctorModal({
           </div>
 
           <div className="space-y-1.5 text-center sm:text-left flex-1">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-50 text-[#E06338] text-xs font-semibold rounded-full border border-orange-100 mb-1">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-orange-50 text-[#e6704a] text-xs font-semibold rounded-full border border-orange-100 mb-1">
               <CheckCircle2 className="w-3.5 h-3.5" />
               Accepting Patients
             </span>
@@ -46,7 +46,7 @@ export default function DoctorModal({
               {doctor.name}
             </h2>
 
-            <p className="text-sm font-bold text-[#E06338] flex items-center justify-center sm:justify-start gap-1.5">
+            <p className="text-sm font-bold text-[#e6704a] flex items-center justify-center sm:justify-start gap-1.5">
               <Stethoscope className="w-4 h-4" />
               <span>{doctor.role}</span>
             </p>
@@ -66,7 +66,7 @@ export default function DoctorModal({
             {doctor.areasOfInterest.map((interest, idx) => (
               <span
                 key={idx}
-                className="px-3 py-1.5 bg-slate-100 hover:bg-orange-50 hover:text-[#E06338] text-slate-700 text-xs font-medium rounded-full transition-colors border border-slate-200/60"
+                className="px-3 py-1.5 bg-slate-100 hover:bg-orange-50 hover:text-[#e6704a] text-slate-700 text-xs font-medium rounded-full transition-colors border border-slate-200/60"
               >
                 {interest}
               </span>
@@ -81,7 +81,7 @@ export default function DoctorModal({
               href={CLINIC_URLS.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2"
+              className="flex-1 py-3.5 bg-[#e6704a] hover:bg-[#c8552e] text-white font-bold rounded-xl shadow-md transition-all text-sm flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4" />
               <span>Book Appointment Online</span>

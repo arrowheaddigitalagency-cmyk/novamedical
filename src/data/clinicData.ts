@@ -28,8 +28,9 @@ export interface OpeningHourItem {
 }
 
 export const CLINIC_URLS = {
-  bookingUrl: "https://novamedical.com.au/booking-online/",
+  emergencyTel: "tel:000",
   repeatScriptsUrl: "https://automedsystems.com.au/ams/clinics/31/nova-medical-centre-stirling-stirling-6021/scripts/loc/1",
+  bookingUrl: "https://automedsystems.com.au/ams/clinics/31/nova-medical-centre-stirling-stirling-6021/doctors",
   googleMapsUrl: "https://maps.app.goo.gl/D8cA5WoEdn6s85Zz6",
 };
 

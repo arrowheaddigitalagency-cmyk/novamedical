@@ -14,15 +14,18 @@ export default function DoctorAvatar({ doctor, className = "h-64 w-full" }: Doct
     <div className={`relative overflow-hidden bg-slate-900 ${className}`}>
       {doctor.avatarUrl ? (
         /* Real Doctor Portrait Photo */
-        <Image
-          src={doctor.avatarUrl}
-          alt={doctor.name}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-          unoptimized
-          priority
-        />
+        <div className="w-full h-full relative">
+          <Image
+            src={doctor.avatarUrl}
+            alt={doctor.name}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            unoptimized
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-white via-white/10 to-transparent opacity-90 pointer-events-none" />
+        </div>
       ) : (
         /* Styled Full-Width Doctor Portrait Illustration */
         <div className="w-full h-full relative flex items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900">

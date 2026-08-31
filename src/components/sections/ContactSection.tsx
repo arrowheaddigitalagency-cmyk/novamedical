@@ -24,11 +24,11 @@ export default function ContactSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-3">
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338]">
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e6704a]">
             GET IN TOUCH
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight">
-            Contact <span className="text-[#E06338]">Us</span>
+            Contact <span className="text-[#e6704a]">Us</span>
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             We&apos;re here to help. Reach out to us for appointments, inquiries, or any health concerns.
@@ -40,7 +40,7 @@ export default function ContactSection() {
           <div className="lg:col-span-6 space-y-4 flex flex-col justify-between">
             {/* Phone Card */}
             <div className="glass-box p-5 rounded-2xl flex items-start gap-4">
-              <div className="p-3 bg-orange-50 text-[#E06338] border border-orange-200/80 rounded-xl shrink-0">
+              <div className="p-3 bg-orange-50 text-[#e6704a] border border-orange-200/80 rounded-xl shrink-0">
                 <Phone className="w-5 h-5" />
               </div>
               <div className="space-y-1">
@@ -49,7 +49,7 @@ export default function ContactSection() {
                 </span>
                 <a
                   href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                  className="text-lg font-bold text-[#E06338] hover:underline block"
+                  className="text-lg font-bold text-[#e6704a] hover:underline block"
                 >
                   {CLINIC_INFO.phone}
                 </a>
@@ -70,7 +70,7 @@ export default function ContactSection() {
                 </span>
                 <a
                   href={`mailto:${CLINIC_INFO.email}`}
-                  className="text-base font-bold text-slate-800 hover:text-[#E06338] hover:underline block break-all"
+                  className="text-base font-bold text-slate-800 hover:text-[#e6704a] hover:underline block break-all"
                 >
                   {CLINIC_INFO.email}
                 </a>
@@ -99,7 +99,7 @@ export default function ContactSection() {
                   href={CLINIC_INFO.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#E06338] hover:underline pt-1"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#e6704a] hover:underline pt-1"
                 >
                   <span>Get Directions on Google Maps</span>
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -111,7 +111,7 @@ export default function ContactSection() {
             <div className="bg-[#10182D] text-white p-5 sm:p-6 rounded-2xl shadow-xs space-y-4 border border-slate-800">
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2.5">
-                  <Clock className="w-5 h-5 text-[#E06338]" />
+                  <Clock className="w-5 h-5 text-[#e6704a]" />
                   <h3 className="font-bold text-base text-white">Opening Hours</h3>
                 </div>
                 <span className="text-[11px] font-semibold text-orange-400 bg-orange-950/80 px-2.5 py-0.5 rounded-full border border-orange-800">
@@ -134,7 +134,7 @@ export default function ContactSection() {
                       }`}
                     >
                       <span className="flex items-center gap-1.5">
-                        {isHighlighted && <span className="w-1.5 h-1.5 rounded-full bg-[#E06338]" />}
+                        {isHighlighted && <span className="w-1.5 h-1.5 rounded-full bg-[#e6704a]" />}
                         <span>{item.day}</span>
                       </span>
                       <span className="font-mono text-orange-300 font-semibold">{item.hours}</span>
@@ -163,7 +163,7 @@ export default function ContactSection() {
             </div>
 
             {/* Ready to Book Banner (FLUSH WITH BOTTOM LINE) */}
-            <div className="bg-gradient-to-r from-[#E06338] to-[#C54E26] text-white p-5 rounded-2xl shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
+            <div className="bg-gradient-to-r from-[#e6704a] to-[#c8552e] text-white p-5 rounded-2xl shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-4 shrink-0">
               <div>
                 <h4 className="font-bold text-base">Ready to book?</h4>
                 <p className="text-xs text-white/90">
@@ -174,7 +174,7 @@ export default function ContactSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-5 py-2.5 bg-white text-[#E06338] hover:bg-slate-100 font-bold text-xs rounded-xl shadow-2xs transition-all shrink-0 flex items-center gap-1.5"
+                className="px-5 py-2.5 bg-white text-[#e6704a] hover:bg-slate-100 font-bold text-xs rounded-xl shadow-2xs transition-all shrink-0 flex items-center gap-1.5"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Now</span>
@@ -196,7 +196,7 @@ export default function ContactSection() {
               <strong className="text-slate-800">{CLINIC_INFO.afterHours.service}</strong> on{" "}
               <a
                 href={`tel:${CLINIC_INFO.afterHours.phone.replace(/\s+/g, "")}`}
-                className="font-bold text-[#E06338] underline"
+                className="font-bold text-[#e6704a] underline"
               >
                 {CLINIC_INFO.afterHours.phone}
               </a>{" "}

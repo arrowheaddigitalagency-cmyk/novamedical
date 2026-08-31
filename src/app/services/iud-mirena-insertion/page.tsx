@@ -27,7 +27,7 @@ export default function IUDMirenaPage() {
         <div>
           <Link
             href="/#services"
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#E06338] hover:underline"
+            className="inline-flex items-center gap-2 text-xs font-bold text-[#e6704a] hover:underline"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Services</span>
@@ -37,7 +37,7 @@ export default function IUDMirenaPage() {
         {/* Main Content Area */}
         <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-100 shadow-soft space-y-8">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-6">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#E06338]">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#e6704a]">
               IUD &amp; Mirena Insertion &amp; Removal
             </h1>
 
@@ -45,7 +45,7 @@ export default function IUDMirenaPage() {
               href={CLINIC_URLS.bookingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-[#E06338] hover:bg-[#C54E26] text-white font-extrabold text-sm sm:text-base tracking-wider uppercase rounded-xl transition-all shadow-md inline-flex items-center justify-center gap-2 shrink-0 self-start md:self-auto"
+              className="px-8 py-3 bg-[#e6704a] hover:bg-[#c8552e] text-white font-extrabold text-sm sm:text-base tracking-wider uppercase rounded-xl transition-all shadow-md inline-flex items-center justify-center gap-2 shrink-0 self-start md:self-auto"
             >
               <span>BOOK NOW</span>
               <ExternalLink className="w-4 h-4" />
@@ -62,7 +62,7 @@ export default function IUDMirenaPage() {
             </p>
 
             <p className="pt-2 font-medium">
-              <Link href="/contact" className="text-[#E06338] font-bold hover:underline">
+              <Link href="/contact" className="text-[#e6704a] font-bold hover:underline">
                 Contact us
               </Link>{" "}
               today or book online for an initial consult.

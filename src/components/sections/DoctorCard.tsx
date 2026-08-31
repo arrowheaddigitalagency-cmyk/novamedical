@@ -18,7 +18,7 @@ export default function DoctorCard({
   const remainingCount = doctor.areasOfInterest.length - visibleInterests.length;
 
   return (
-    <div className="glass-box glass-box-hover rounded-3xl flex flex-col justify-between overflow-hidden group border border-orange-200/60 shadow-soft h-full">
+    <div className="glass-box glass-box-hover rounded-3xl flex flex-col justify-between overflow-hidden group shadow-soft h-full">
       {/* Full-Width Doctor Photo Header */}
       <div className="relative w-full shrink-0">
         <DoctorAvatar doctor={doctor} className="h-60 sm:h-64 w-full" />
@@ -28,12 +28,12 @@ export default function DoctorCard({
       <div className="p-5 pt-3 flex-1 flex flex-col justify-between space-y-2.5">
         <div className="space-y-1">
           {/* Doctor Name */}
-          <h3 className="text-xl font-extrabold text-[#10182D] tracking-tight group-hover:text-[#E06338] transition-colors leading-tight">
+          <h3 className="text-xl font-extrabold text-[#10182D] tracking-tight group-hover:text-[#e6704a] transition-colors leading-tight">
             {doctor.name}
           </h3>
 
           {/* Role */}
-          <p className="text-xs font-bold text-[#E06338] flex items-center gap-1.5">
+          <p className="text-xs font-bold text-[#e6704a] flex items-center gap-1.5">
             <Stethoscope className="w-3.5 h-3.5 shrink-0" />
             <span>{doctor.role}</span>
           </p>
@@ -52,7 +52,7 @@ export default function DoctorCard({
             {visibleInterests.map((interest, idx) => (
               <span
                 key={idx}
-                className="px-2.5 py-0.5 bg-slate-100/90 hover:bg-orange-50 hover:text-[#E06338] text-slate-700 text-[11px] font-medium rounded-full transition-colors border border-slate-200/50"
+                className="px-2.5 py-0.5 bg-slate-100/90 hover:bg-orange-50 hover:text-[#e6704a] text-slate-700 text-[11px] font-medium rounded-full transition-colors border border-slate-200/50"
               >
                 {interest}
               </span>
@@ -60,7 +60,7 @@ export default function DoctorCard({
             {remainingCount > 0 && (
               <button
                 onClick={() => onViewProfile(doctor)}
-                className="px-2.5 py-0.5 bg-orange-50 text-[#E06338] text-[11px] font-semibold rounded-full hover:bg-orange-100 transition-colors border border-orange-200/60"
+                className="px-2.5 py-0.5 bg-orange-50 text-[#e6704a] text-[11px] font-semibold rounded-full hover:bg-orange-100 transition-colors border border-orange-200/60"
               >
                 +{remainingCount} more
               </button>
@@ -73,7 +73,7 @@ export default function DoctorCard({
       <div className="p-3 bg-slate-50/80 border-t border-orange-100/80 grid grid-cols-2 gap-1.5 shrink-0">
         <button
           onClick={() => onViewProfile(doctor)}
-          className="py-2.5 px-2 bg-white hover:bg-orange-50 text-slate-700 hover:text-[#E06338] text-xs font-bold rounded-xl border border-slate-200 transition-colors text-center shadow-2xs whitespace-nowrap"
+          className="py-2.5 px-2 bg-white hover:bg-orange-50 text-slate-700 hover:text-[#e6704a] text-xs font-bold rounded-xl border border-slate-200 transition-colors text-center shadow-2xs whitespace-nowrap"
         >
           View Profile
         </button>
@@ -82,7 +82,7 @@ export default function DoctorCard({
           href={CLINIC_URLS.bookingUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="py-2.5 px-2 bg-[#E06338] hover:bg-[#C54E26] text-white text-xs font-bold rounded-xl transition-colors shadow-2xs flex items-center justify-center gap-1 whitespace-nowrap"
+          className="py-2.5 px-2 bg-[#5aa316] hover:bg-[#4a8a12] text-white text-xs font-bold rounded-xl transition-colors shadow-2xs flex items-center justify-center gap-1 whitespace-nowrap"
         >
           <Calendar className="w-3.5 h-3.5 shrink-0" />
           <span className="whitespace-nowrap">Book Now</span>

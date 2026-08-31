@@ -42,7 +42,7 @@ export default function BookingModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm animate-fadeIn">
       <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden border border-slate-100 relative max-h-[90vh] flex flex-col">
         {/* Header */}
-        <div className="bg-[#E06338] text-white p-5 flex items-center justify-between">
+        <div className="bg-[#e6704a] text-white p-5 flex items-center justify-between">
           <div>
             <span className="text-xs uppercase font-semibold text-orange-200 tracking-wider">
               {CLINIC_INFO.name}
@@ -70,7 +70,7 @@ export default function BookingModal({
               onClick={() => setActiveTab("appointment")}
               className={`flex-1 py-3 px-4 text-xs font-semibold flex items-center justify-center gap-2 border-b-2 transition-colors ${
                 activeTab === "appointment"
-                  ? "border-[#E06338] text-[#E06338] bg-white"
+                  ? "border-[#e6704a] text-[#e6704a] bg-white"
                   : "border-transparent text-slate-500 hover:text-slate-700"
               }`}
             >
@@ -81,7 +81,7 @@ export default function BookingModal({
               onClick={() => setActiveTab("script")}
               className={`flex-1 py-3 px-4 text-xs font-semibold flex items-center justify-center gap-2 border-b-2 transition-colors ${
                 activeTab === "script"
-                  ? "border-[#E06338] text-[#E06338] bg-white"
+                  ? "border-[#e6704a] text-[#e6704a] bg-white"
                   : "border-transparent text-slate-500 hover:text-slate-700"
               }`}
             >
@@ -95,7 +95,7 @@ export default function BookingModal({
         <div className="p-6 overflow-y-auto flex-1 space-y-5">
           {submitted ? (
             <div className="py-8 text-center space-y-4">
-              <div className="w-16 h-16 bg-orange-100 text-[#E06338] rounded-full flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 bg-orange-100 text-[#e6704a] rounded-full flex items-center justify-center mx-auto">
                 <CheckCircle2 className="w-10 h-10" />
               </div>
               <h3 className="text-xl font-bold text-slate-800">
@@ -106,7 +106,7 @@ export default function BookingModal({
               </p>
               <button
                 onClick={handleReset}
-                className="py-2.5 px-6 bg-[#E06338] text-white font-semibold rounded-xl hover:bg-[#C54E26] transition-colors text-sm"
+                className="py-2.5 px-6 bg-[#e6704a] text-white font-semibold rounded-xl hover:bg-[#c8552e] transition-colors text-sm"
               >
                 Close Window
               </button>
@@ -117,13 +117,13 @@ export default function BookingModal({
               <div className="bg-orange-50/80 border border-orange-200/70 p-3.5 rounded-xl flex items-center justify-between">
                 <div>
                   <p className="text-xs text-slate-600">Need instant booking?</p>
-                  <p className="text-sm font-bold text-[#E06338]">
+                  <p className="text-sm font-bold text-[#e6704a]">
                     Call Clinic directly: {CLINIC_INFO.phone}
                   </p>
                 </div>
                 <a
                   href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                  className="py-1.5 px-3 bg-[#E06338] text-white text-xs font-semibold rounded-lg hover:bg-[#C54E26] transition-colors flex items-center gap-1 shrink-0"
+                  className="py-1.5 px-3 bg-[#e6704a] text-white text-xs font-semibold rounded-lg hover:bg-[#c8552e] transition-colors flex items-center gap-1 shrink-0"
                 >
                   <Phone className="w-3.5 h-3.5" />
                   <span>Call Now</span>
@@ -141,7 +141,7 @@ export default function BookingModal({
                     placeholder="e.g. Sarah Jenkins"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#E06338] focus:ring-1 focus:ring-[#E06338] outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#e6704a] focus:ring-1 focus:ring-[#e6704a] outline-none"
                   />
                 </div>
 
@@ -156,7 +156,7 @@ export default function BookingModal({
                       placeholder="0400 000 000"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#E06338] focus:ring-1 focus:ring-[#E06338] outline-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#e6704a] focus:ring-1 focus:ring-[#e6704a] outline-none"
                     />
                   </div>
 
@@ -169,7 +169,7 @@ export default function BookingModal({
                       placeholder="sarah@example.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#E06338] focus:ring-1 focus:ring-[#E06338] outline-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#e6704a] focus:ring-1 focus:ring-[#e6704a] outline-none"
                     />
                   </div>
                 </div>
@@ -183,7 +183,7 @@ export default function BookingModal({
                       type="date"
                       value={formData.preferredDate}
                       onChange={(e) => setFormData({ ...formData, preferredDate: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#E06338] focus:ring-1 focus:ring-[#E06338] outline-none"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#e6704a] focus:ring-1 focus:ring-[#e6704a] outline-none"
                     />
                   </div>
 
@@ -194,7 +194,7 @@ export default function BookingModal({
                     <select
                       value={formData.preferredTime}
                       onChange={(e) => setFormData({ ...formData, preferredTime: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#E06338] focus:ring-1 focus:ring-[#E06338] outline-none bg-white"
+                      className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#e6704a] focus:ring-1 focus:ring-[#e6704a] outline-none bg-white"
                     >
                       <option value="morning">Morning (7:30 AM – 12:00 PM)</option>
                       <option value="afternoon">Afternoon (12:00 PM – 4:00 PM)</option>
@@ -216,14 +216,14 @@ export default function BookingModal({
                     }
                     value={formData.notes}
                     onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#E06338] focus:ring-1 focus:ring-[#E06338] outline-none"
+                    className="w-full px-3.5 py-2.5 rounded-xl border border-slate-200 text-sm focus:border-[#e6704a] focus:ring-1 focus:ring-[#e6704a] outline-none"
                   />
                 </div>
 
                 <div className="pt-2">
                   <button
                     type="submit"
-                    className="w-full py-3 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl shadow transition-all text-sm flex items-center justify-center gap-2"
+                    className="w-full py-3 bg-[#e6704a] hover:bg-[#c8552e] text-white font-bold rounded-xl shadow transition-all text-sm flex items-center justify-center gap-2"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>Submit Request</span>
@@ -234,10 +234,10 @@ export default function BookingModal({
               {/* Clinic info note */}
               <div className="border-t border-slate-100 pt-3 flex items-center justify-between text-[11px] text-slate-500">
                 <span className="flex items-center gap-1">
-                  <Clock className="w-3.5 h-3.5 text-[#E06338]" /> Open 7 Days
+                  <Clock className="w-3.5 h-3.5 text-[#e6704a]" /> Open 7 Days
                 </span>
                 <span className="flex items-center gap-1">
-                  <MapPin className="w-3.5 h-3.5 text-[#E06338]" /> Stirling WA
+                  <MapPin className="w-3.5 h-3.5 text-[#e6704a]" /> Stirling WA
                 </span>
               </div>
             </>

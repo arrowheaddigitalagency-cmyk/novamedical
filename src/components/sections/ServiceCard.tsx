@@ -82,7 +82,7 @@ export default function ServiceCard({ service, onSelect }: ServiceCardProps) {
         </div>
 
         <div className="space-y-2">
-          <h3 className="text-lg font-bold text-slate-800 tracking-tight group-hover:text-[#E06338] transition-colors">
+          <h3 className="text-lg font-bold text-slate-800 tracking-tight group-hover:text-[#e6704a] transition-colors">
             {service.title}
           </h3>
           <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -96,7 +96,7 @@ export default function ServiceCard({ service, onSelect }: ServiceCardProps) {
           <Link
             href={`/services/${service.slug}`}
             onClick={(e) => e.stopPropagation()}
-            className="flex items-center gap-1 text-xs font-bold text-[#E06338] group-hover:translate-x-0.5 transition-all hover:underline"
+            className="flex items-center gap-1 text-xs font-bold text-[#e6704a] group-hover:translate-x-0.5 transition-all hover:underline"
           >
             <span>Learn More</span>
             <ChevronRight className="w-3.5 h-3.5" />
@@ -110,7 +110,7 @@ export default function ServiceCard({ service, onSelect }: ServiceCardProps) {
           target="_blank"
           rel="noopener noreferrer"
           onClick={(e) => e.stopPropagation()}
-          className="px-3.5 py-1.5 bg-[#E06338] hover:bg-[#C54E26] text-white text-xs font-bold rounded-xl transition-all shadow-2xs hover:shadow flex items-center gap-1"
+          className="px-3.5 py-1.5 bg-[#e6704a] hover:bg-[#c8552e] text-white text-xs font-bold rounded-xl transition-all shadow-2xs hover:shadow flex items-center gap-1"
         >
           <span>Book Online</span>
         </a>

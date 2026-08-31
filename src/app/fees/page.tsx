@@ -57,7 +57,7 @@ export default function FeesPage() {
           <div>
             <Link
               href="/"
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#E06338] hover:underline"
+              className="inline-flex items-center gap-2 text-xs font-bold text-[#e6704a] hover:underline"
             >
               <ArrowLeft className="w-4 h-4" />
               <span>Back to Home</span>
@@ -67,7 +67,7 @@ export default function FeesPage() {
           {/* Page Header */}
           <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-100 shadow-soft space-y-4">
             <div className="flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#E06338] bg-orange-50 px-3 py-1 rounded-full border border-orange-100">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#e6704a] bg-orange-50 px-3 py-1 rounded-full border border-orange-100">
                 PATIENT INFORMATION &amp; BILLING
               </span>
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-700 bg-slate-100 px-3 py-1 rounded-full border border-slate-200">
@@ -75,7 +75,7 @@ export default function FeesPage() {
               </span>
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-              Fees &amp; Billing <span className="text-[#E06338]">Policy</span>
+              Fees &amp; Billing <span className="text-[#e6704a]">Policy</span>
             </h1>
             <p className="text-base sm:text-lg text-slate-700 max-w-3xl leading-relaxed font-medium">
               Nova Medical Centre is a <strong>Private Billing Practice</strong> that provides a mix of private and bulk billed consultations for eligible patients.
@@ -83,7 +83,7 @@ export default function FeesPage() {
           </div>
 
           {/* Bulk Billed Eligibility Highlight Banner */}
-          <div className="bg-[#E06338] text-white p-5 sm:p-6 rounded-2xl shadow-md flex items-center gap-4 border border-[#C54E26]">
+          <div className="bg-[#e6704a] text-white p-5 sm:p-6 rounded-2xl shadow-md flex items-center gap-4 border border-[#c8552e]">
             <UserCheck className="w-8 h-8 text-orange-200 shrink-0" />
             <p className="text-sm sm:text-base font-semibold leading-snug">
               ** All patients eligible to be bulk-billed should have a Valid Medicare card.
@@ -93,7 +93,7 @@ export default function FeesPage() {
           {/* Opening Hours & Quick Info */}
           <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-soft space-y-6">
             <div className="flex items-center gap-3 border-b border-slate-100 pb-4">
-              <div className="p-3 bg-orange-100 text-[#E06338] rounded-2xl">
+              <div className="p-3 bg-orange-100 text-[#e6704a] rounded-2xl">
                 <Clock className="w-6 h-6" />
               </div>
               <div>
@@ -153,7 +153,7 @@ export default function FeesPage() {
               </div>
               <button
                 onClick={() => setBookingOpen(true)}
-                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl transition-colors shadow-sm shrink-0"
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-[#e6704a] hover:bg-[#c8552e] text-white font-bold text-sm rounded-xl transition-colors shadow-sm shrink-0"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Appointment</span>
@@ -168,7 +168,7 @@ export default function FeesPage() {
                     <th className="py-4 px-4 rounded-l-xl">Consult Type</th>
                     <th className="py-4 px-4">Fee Range</th>
                     <th className="py-4 px-4">Medicare Rebate</th>
-                    <th className="py-4 px-4 rounded-r-xl text-[#E06338]">Out of Pocket</th>
+                    <th className="py-4 px-4 rounded-r-xl text-[#e6704a]">Out of Pocket</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100 text-xs sm:text-sm">
@@ -177,7 +177,7 @@ export default function FeesPage() {
                       <td className="py-4 px-4 font-semibold text-slate-900">{row.type}</td>
                       <td className="py-4 px-4 font-medium text-slate-700">{row.feeRange}</td>
                       <td className="py-4 px-4 font-medium text-slate-600">{row.rebate}</td>
-                      <td className="py-4 px-4 font-bold text-[#E06338]">{row.outOfPocket}</td>
+                      <td className="py-4 px-4 font-bold text-[#e6704a]">{row.outOfPocket}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -187,11 +187,11 @@ export default function FeesPage() {
             {/* Notes under table */}
             <div className="bg-orange-50/60 p-4 rounded-2xl border border-orange-100/80 space-y-2 text-xs sm:text-sm text-slate-700">
               <p className="flex items-center gap-2 font-medium">
-                <span className="w-2 h-2 rounded-full bg-[#E06338] shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-[#e6704a] shrink-0" />
                 <span>These fees also apply to telephone consultations.</span>
               </p>
               <p className="flex items-center gap-2 font-medium">
-                <span className="w-2 h-2 rounded-full bg-[#E06338] shrink-0" />
+                <span className="w-2 h-2 rounded-full bg-[#e6704a] shrink-0" />
                 <span>A discounted fee may apply at the discretion of the treating doctor.</span>
               </p>
             </div>
@@ -202,7 +202,7 @@ export default function FeesPage() {
             {/* Consultation Fees */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-soft space-y-3">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-orange-100 text-[#E06338] rounded-xl">
+                <div className="p-2.5 bg-orange-100 text-[#e6704a] rounded-xl">
                   <DollarSign className="w-5 h-5" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">Consultation Fees</h3>
@@ -215,7 +215,7 @@ export default function FeesPage() {
             {/* Payment */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-soft space-y-3">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-orange-100 text-[#E06338] rounded-xl">
+                <div className="p-2.5 bg-orange-100 text-[#e6704a] rounded-xl">
                   <CreditCard className="w-5 h-5" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">Payment</h3>
@@ -228,7 +228,7 @@ export default function FeesPage() {
             {/* Specific Medicare Items */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-soft space-y-3">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-orange-100 text-[#E06338] rounded-xl">
+                <div className="p-2.5 bg-orange-100 text-[#e6704a] rounded-xl">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">Specific Medicare Items</h3>
@@ -241,7 +241,7 @@ export default function FeesPage() {
             {/* WorkCover, MVIT & Insurance */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl border border-slate-100 shadow-soft space-y-3">
               <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-orange-100 text-[#E06338] rounded-xl">
+                <div className="p-2.5 bg-orange-100 text-[#e6704a] rounded-xl">
                   <FileText className="w-5 h-5" />
                 </div>
                 <h3 className="text-lg font-bold text-slate-900">WorkCover, MVIT &amp; Insurance</h3>
@@ -322,11 +322,11 @@ export default function FeesPage() {
                 <span>Nova Medical Centre does not upload medical records to USB devices.</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <Clock className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 text-[#e6704a] shrink-0 mt-0.5" />
                 <span>Please allow up to 30 days after full payment has been received for processing.</span>
               </div>
               <div className="flex items-start gap-2.5">
-                <CreditCard className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
+                <CreditCard className="w-4 h-4 text-[#e6704a] shrink-0 mt-0.5" />
                 <span>
                   Payment is required on the day of the consult and can be made by cash, EFTPOS or Credit Card. Workers compensation &amp; motor vehicle accident patients are required to pay their accounts at the time of consult until a letter of liability is produced from their insurance company.
                 </span>
@@ -354,7 +354,7 @@ export default function FeesPage() {
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="px-6 py-3 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl text-sm transition-colors flex items-center justify-center gap-2 shadow"
+                className="px-6 py-3 bg-[#e6704a] hover:bg-[#c8552e] text-white font-bold rounded-xl text-sm transition-colors flex items-center justify-center gap-2 shadow"
               >
                 <Phone className="w-4 h-4" />
                 <span>{CLINIC_INFO.phone}</span>

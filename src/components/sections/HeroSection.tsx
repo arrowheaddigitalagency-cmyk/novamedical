@@ -26,8 +26,8 @@ export default function HeroSection() {
       <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top Status Banner */}
         <div className="flex flex-wrap items-center gap-2.5 mb-6 animate-fadeIn">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-orange-100/90 text-[#C54E26] border border-orange-200 shadow-2xs">
-            <span className="w-2 h-2 rounded-full bg-[#E06338] animate-ping" />
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-[#5aa316]/10 text-[#4a8a12] border border-[#5aa316]/30 shadow-2xs">
+            <span className="w-2 h-2 rounded-full bg-[#5aa316] animate-ping" />
             <span>{HERO_BADGES[0]}</span>
           </span>
         </div>
@@ -36,12 +36,12 @@ export default function HeroSection() {
           {/* Left Content Area */}
           <div className="lg:col-span-7 space-y-6">
             <div className="space-y-2">
-              <span className="text-xs font-bold text-[#E06338] uppercase tracking-[0.2em]">
+              <span className="text-xs font-bold text-[#e6704a] uppercase tracking-[0.2em]">
                 Welcome to Nova Medical Centre STIRLING
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-[54px] font-bold tracking-tight text-slate-900 leading-[1.15]">
                 Welcome to <br className="hidden sm:inline" />
-                <span className="text-[#E06338]">Nova Medical Centre</span> STIRLING
+                <span className="text-[#e6704a]">Nova Medical Centre</span> STIRLING
               </h1>
             </div>
 
@@ -55,7 +55,7 @@ export default function HeroSection() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-5 sm:px-6 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm sm:text-base rounded-2xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
+                className="w-full sm:w-auto px-5 sm:px-6 py-3.5 bg-[#e6704a] hover:bg-[#c8552e] text-white font-bold text-sm sm:text-base rounded-2xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap"
               >
                 <Calendar className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
                 <span className="whitespace-nowrap">Book Now</span>
@@ -64,9 +64,9 @@ export default function HeroSection() {
 
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="w-full sm:w-auto px-4 sm:px-5 py-3.5 bg-white hover:bg-orange-50 text-[#E06338] font-semibold text-sm sm:text-base rounded-2xl border-2 border-orange-200 transition-all flex items-center justify-center gap-2 shadow-2xs hover:-translate-y-0.5 whitespace-nowrap"
+                className="w-full sm:w-auto px-4 sm:px-5 py-3.5 bg-white hover:bg-orange-50 text-[#e6704a] font-semibold text-sm sm:text-base rounded-2xl border-2 border-orange-200 transition-all flex items-center justify-center gap-2 shadow-2xs hover:-translate-y-0.5 whitespace-nowrap"
               >
-                <Phone className="w-4 h-4 text-[#E06338] shrink-0" />
+                <Phone className="w-4 h-4 text-[#e6704a] shrink-0" />
                 <span className="whitespace-nowrap">Call {CLINIC_INFO.phone}</span>
               </a>
 
@@ -74,9 +74,9 @@ export default function HeroSection() {
                 href={CLINIC_URLS.repeatScriptsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-4 sm:px-5 py-3.5 bg-amber-50 hover:bg-amber-100 text-amber-900 font-semibold text-sm sm:text-base rounded-2xl border border-amber-200 transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 whitespace-nowrap"
+                className="w-full sm:w-auto px-4 sm:px-5 py-3.5 bg-[#feae29]/15 hover:bg-[#feae29]/25 text-[#b37505] font-bold text-sm sm:text-base rounded-2xl border border-[#feae29]/40 transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 whitespace-nowrap"
               >
-                <FileText className="w-4 h-4 text-amber-600 shrink-0" />
+                <FileText className="w-4 h-4 text-[#feae29] shrink-0" />
                 <span className="whitespace-nowrap">Repeat Scripts</span>
                 <ExternalLink className="w-3.5 h-3.5 opacity-70 shrink-0" />
               </a>
@@ -85,7 +85,7 @@ export default function HeroSection() {
             {/* Bottom Quick Chips */}
             <div className="pt-6 border-t border-slate-200/60 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="flex items-start gap-3 p-3.5 bg-white/90 rounded-2xl border border-slate-100 shadow-2xs hover:border-orange-200 transition-all">
-                <div className="p-2.5 bg-orange-100/60 text-[#E06338] rounded-xl shrink-0 mt-0.5">
+                <div className="p-2.5 bg-orange-100/60 text-[#e6704a] rounded-xl shrink-0 mt-0.5">
                   <Clock className="w-4 h-4" />
                 </div>
                 <div>
@@ -107,11 +107,11 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className="flex items-start gap-3 p-3.5 bg-white/90 rounded-2xl border border-slate-100 shadow-2xs hover:border-orange-200 transition-all group"
               >
-                <div className="p-2.5 bg-orange-100/60 text-[#E06338] rounded-xl shrink-0 mt-0.5">
+                <div className="p-2.5 bg-orange-100/60 text-[#e6704a] rounded-xl shrink-0 mt-0.5">
                   <MapPin className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-xs font-bold text-slate-800 uppercase tracking-wide block flex items-center gap-1 group-hover:text-[#E06338]">
+                  <span className="text-xs font-bold text-slate-800 uppercase tracking-wide block flex items-center gap-1 group-hover:text-[#e6704a]">
                     <span>Location</span>
                     <ExternalLink className="w-3 h-3 opacity-60" />
                   </span>
@@ -133,7 +133,7 @@ export default function HeroSection() {
               <div className="grid grid-cols-2 gap-2.5">
                 <div className="bg-orange-50/90 p-2.5 rounded-2xl border border-orange-100 flex flex-col justify-center gap-1.5 h-full">
                   <div className="flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-lg bg-orange-100 text-[#E06338] flex items-center justify-center font-bold text-xs shrink-0">
+                    <div className="w-7 h-7 rounded-lg bg-orange-100 text-[#e6704a] flex items-center justify-center font-bold text-xs shrink-0">
                       {DOCTORS.length}
                     </div>
                     <p className="font-bold text-slate-800 text-[11px] leading-tight">Experienced GPs</p>
@@ -162,7 +162,7 @@ export default function HeroSection() {
 
               {/* Brand Header */}
               <div className="flex items-center gap-3 border-t border-slate-100 pt-4">
-                <div className="w-12 h-12 rounded-2xl bg-[#E06338] text-white flex items-center justify-center font-bold shadow-md shrink-0">
+                <div className="w-12 h-12 rounded-2xl bg-[#e6704a] text-white flex items-center justify-center font-bold shadow-md shrink-0">
                   <HeartPulse className="w-6 h-6" />
                 </div>
                 <div>
@@ -193,7 +193,7 @@ export default function HeroSection() {
                   href={CLINIC_URLS.bookingUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2"
+                  className="w-full py-3.5 bg-[#5aa316] hover:bg-[#4a8a12] text-white font-bold rounded-xl text-sm transition-all shadow-md flex items-center justify-center gap-2"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Book Appointment Online</span>
@@ -204,9 +204,9 @@ export default function HeroSection() {
                   href={CLINIC_URLS.repeatScriptsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full py-2.5 bg-amber-50 hover:bg-amber-100 text-amber-900 font-semibold rounded-xl text-xs transition-colors flex items-center justify-center gap-1.5"
+                  className="w-full py-2.5 bg-[#feae29]/15 hover:bg-[#feae29]/25 text-[#b37505] font-bold rounded-xl text-xs border border-[#feae29]/40 transition-colors flex items-center justify-center gap-1.5"
                 >
-                  <FileText className="w-3.5 h-3.5 text-amber-600" />
+                  <FileText className="w-3.5 h-3.5 text-[#b37505]" />
                   <span>Request Repeat Scripts Online</span>
                 </a>
               </div>

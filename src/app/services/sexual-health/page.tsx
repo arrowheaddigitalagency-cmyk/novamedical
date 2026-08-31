@@ -40,7 +40,7 @@ export default function SexualHealthPage() {
   return (
     <div className="bg-slate-50 min-h-screen pb-16">
       {/* Header Banner matching reference design */}
-      <div className="bg-[#E06338] text-white py-4 px-4 sm:px-8 shadow-sm">
+      <div className="bg-[#e6704a] text-white py-4 px-4 sm:px-8 shadow-sm">
         <div className="max-w-[1180px] mx-auto flex items-center gap-3">
           <Heart className="w-6 h-6 shrink-0" />
           <span className="text-lg sm:text-xl font-bold uppercase tracking-wider">
@@ -54,7 +54,7 @@ export default function SexualHealthPage() {
         <div>
           <Link
             href="/#services"
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#E06338] hover:underline"
+            className="inline-flex items-center gap-2 text-xs font-bold text-[#e6704a] hover:underline"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Services</span>
@@ -64,7 +64,7 @@ export default function SexualHealthPage() {
         {/* Main Content Area */}
         <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-100 shadow-soft">
           <div className="space-y-8">
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#E06338]">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#e6704a]">
               STD &amp; STI Testing Clinic
             </h1>
 
@@ -138,7 +138,7 @@ export default function SexualHealthPage() {
                 </p>
 
                 <p className="pt-2">
-                  <Link href="/contact" className="text-[#E06338] font-bold hover:underline">
+                  <Link href="/contact" className="text-[#e6704a] font-bold hover:underline">
                     Contact us
                   </Link>{" "}
                   today for assistance or book an appointment at our practice with our online system.
@@ -160,7 +160,7 @@ export default function SexualHealthPage() {
                     href={CLINIC_URLS.bookingUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-extrabold text-sm sm:text-base tracking-wider uppercase rounded-xl transition-all shadow-md inline-flex items-center gap-2"
+                    className="px-8 py-3.5 bg-[#e6704a] hover:bg-[#c8552e] text-white font-extrabold text-sm sm:text-base tracking-wider uppercase rounded-xl transition-all shadow-md inline-flex items-center gap-2"
                   >
                     <span>BOOK NOW</span>
                     <ExternalLink className="w-4 h-4" />

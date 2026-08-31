@@ -7,14 +7,14 @@ import { Phone, MapPin, Calendar, FileText, Menu, ExternalLink } from "lucide-re
 import { CLINIC_INFO, CLINIC_URLS } from "@/data/clinicData";
 import MobileDrawer from "./MobileDrawer";
 
-export function NovaLogo({ className = "h-14 sm:h-16 w-auto" }: { className?: string }) {
+export function NovaLogo({ className = "h-16 sm:h-20 md:h-24 w-auto" }: { className?: string }) {
   return (
     <div className="flex items-center gap-2.5 group py-1">
       <Image
         src="/images/logo.png"
         alt="Nova Medical Centre Stirling Logo"
-        width={240}
-        height={64}
+        width={320}
+        height={85}
         className={`${className} object-contain transition-transform group-hover:scale-105`}
         priority
         unoptimized
@@ -43,90 +43,87 @@ export default function Header() {
     <>
       <header
         className={`sticky top-0 z-40 bg-white/95 backdrop-blur-md transition-all duration-300 ${
-          isScrolled ? "shadow-xs py-2 border-b border-emerald-100" : "py-3 border-b border-emerald-100/70"
+          isScrolled ? "shadow-xs py-2 border-b border-orange-100" : "py-3 border-b border-orange-100/70"
         }`}
       >
-        <div className="max-w-[1240px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-4">
             {/* Prominent Logo */}
             <Link href="/" aria-label="Nova Medical Centre Stirling Home">
-              <NovaLogo className="h-12 sm:h-14 md:h-16 w-auto" />
+              <NovaLogo className="h-14 sm:h-18 md:h-20 w-auto" />
             </Link>
 
-            {/* Desktop Navigation Links - Single line layout matching original color scheme */}
-            <nav className="hidden lg:flex items-center gap-5 xl:gap-7 text-sm font-semibold whitespace-nowrap">
+            {/* Desktop Navigation Links */}
+            <nav className="hidden lg:flex items-center gap-4 xl:gap-6 text-sm font-semibold whitespace-nowrap">
               <Link
                 href="/"
-                className="text-[#E06338] hover:text-[#C54E26] transition-colors py-1 border-b-2 border-[#E06338]"
+                className="text-[#e6704a] hover:text-[#c8552e] transition-colors py-1 border-b-2 border-[#e6704a]"
               >
                 Home
               </Link>
               <Link
                 href="/#services"
-                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
+                className="text-slate-700 hover:text-[#e6704a] transition-colors py-1"
               >
                 Our Services
               </Link>
               <Link
                 href="/#doctors"
-                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
+                className="text-slate-700 hover:text-[#e6704a] transition-colors py-1"
               >
                 Our Doctors
               </Link>
               <Link
                 href="/#openinghours"
-                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
+                className="text-slate-700 hover:text-[#e6704a] transition-colors py-1"
               >
                 Opening Times
               </Link>
               <Link
                 href="/fees"
-                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
+                className="text-slate-700 hover:text-[#e6704a] transition-colors py-1"
               >
                 Fees
               </Link>
               <Link
                 href="/contact"
-                className="text-slate-700 hover:text-[#E06338] transition-colors py-1"
+                className="text-slate-700 hover:text-[#e6704a] transition-colors py-1"
               >
                 Contact
               </Link>
             </nav>
 
-            {/* Right Action Bar - ICON ONLY FOR PHONE & LOCATION + SINGLE LINE BOOK NOW */}
-            <div className="hidden xl:flex items-center gap-3 text-xs font-medium">
-              {/* Phone Icon Button ONLY */}
+            {/* Right Action Bar - Replicating original 3 pill buttons */}
+            <div className="hidden xl:flex flex-col gap-1.5 items-end text-xs font-bold">
+              {/* 1. Emergency 000 */}
               <a
-                href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative shrink-0"
-                title={`Call ${CLINIC_INFO.phone}`}
-                aria-label={`Call ${CLINIC_INFO.phone}`}
+                href={CLINIC_URLS.emergencyTel}
+                className="flex items-center justify-center gap-2 px-4 py-1.5 bg-[#D92D20] hover:bg-[#B42318] text-white rounded-full transition-all shadow-2xs w-44"
               >
-                <Phone className="w-4 h-4 transition-transform group-hover:scale-110" />
+                <div className="w-4 h-4 rounded-full border-2 border-white flex items-center justify-center font-bold text-[10px]">!</div>
+                <span>Emergency 000</span>
               </a>
 
-              {/* Location Map Pin Icon Button ONLY */}
+              {/* 2. Repeat Scripts */}
               <a
-                href={CLINIC_INFO.googleMapsUrl}
+                href={CLINIC_URLS.repeatScriptsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 bg-orange-50 hover:bg-orange-100 text-[#E06338] rounded-xl border border-orange-200/80 transition-colors group relative shrink-0"
-                title="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
-                aria-label="31 Cedric Street, Stirling, Western Australia 6021 (Open Google Maps)"
+                className="flex items-center justify-center gap-2 px-4 py-1.5 bg-white hover:bg-purple-50 text-[#8B5CF6] border-2 border-[#8B5CF6] rounded-full transition-all shadow-2xs w-44"
               >
-                <MapPin className="w-4 h-4 transition-transform group-hover:scale-110" />
+                <FileText className="w-3.5 h-3.5 shrink-0" />
+                <span>Repeat Scripts</span>
               </a>
 
-              {/* Book Appointment CTA - GUARANTEED SINGLE LINE */}
+              {/* 3. Book Now */}
               <a
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-2.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-sm rounded-xl shadow-xs transition-all transform hover:-translate-y-0.5 whitespace-nowrap shrink-0"
+                className="flex items-center justify-center gap-2 px-4 py-1.5 bg-[#5aa316] hover:bg-[#4a8a12] text-white rounded-full transition-all shadow-2xs w-44"
               >
-                <Calendar className="w-4 h-4 shrink-0" />
+                <Calendar className="w-3.5 h-3.5 shrink-0" />
                 <span>Book Now</span>
-                <ExternalLink className="w-3.5 h-3.5 opacity-80 shrink-0" />
               </a>
             </div>
 
@@ -136,7 +133,7 @@ export default function Header() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-3.5 py-2 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold text-xs sm:text-sm rounded-xl transition-all"
+                className="hidden sm:flex items-center gap-1.5 px-3.5 py-2 bg-[#5aa316] hover:bg-[#4a8a12] text-white font-bold text-xs sm:text-sm rounded-xl transition-all"
               >
                 <Calendar className="w-4 h-4" />
                 <span>Book Now</span>
@@ -144,7 +141,7 @@ export default function Header() {
 
               <a
                 href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-                className="p-2 sm:p-2.5 bg-orange-50 text-[#E06338] rounded-xl hover:bg-orange-100 transition-colors"
+                className="p-2 sm:p-2.5 bg-orange-50 text-[#e6704a] rounded-xl hover:bg-orange-100 transition-colors"
                 aria-label="Call clinic"
               >
                 <Phone className="w-5 h-5" />

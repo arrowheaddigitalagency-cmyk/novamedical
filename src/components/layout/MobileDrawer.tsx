@@ -46,42 +46,42 @@ export default function MobileDrawer({
           <Link
             href="/"
             onClick={onClose}
-            className="text-lg font-semibold text-slate-800 hover:text-[#E06338] py-2 border-b border-slate-100"
+            className="text-lg font-semibold text-slate-800 hover:text-[#e6704a] py-2 border-b border-slate-100"
           >
             Home
           </Link>
           <Link
             href="/#services"
             onClick={onClose}
-            className="text-lg font-semibold text-slate-800 hover:text-[#E06338] py-2 border-b border-slate-100"
+            className="text-lg font-semibold text-slate-800 hover:text-[#e6704a] py-2 border-b border-slate-100"
           >
             our services
           </Link>
           <Link
             href="/#doctors"
             onClick={onClose}
-            className="text-lg font-semibold text-slate-800 hover:text-[#E06338] py-2 border-b border-slate-100"
+            className="text-lg font-semibold text-slate-800 hover:text-[#e6704a] py-2 border-b border-slate-100"
           >
             our doctors
           </Link>
           <Link
             href="/#openinghours"
             onClick={onClose}
-            className="text-lg font-semibold text-slate-800 hover:text-[#E06338] py-2 border-b border-slate-100"
+            className="text-lg font-semibold text-slate-800 hover:text-[#e6704a] py-2 border-b border-slate-100"
           >
             opening times
           </Link>
           <Link
             href="/fees"
             onClick={onClose}
-            className="text-lg font-semibold text-slate-800 hover:text-[#E06338] py-2 border-b border-slate-100"
+            className="text-lg font-semibold text-slate-800 hover:text-[#e6704a] py-2 border-b border-slate-100"
           >
             Fees
           </Link>
           <Link
             href="/contact"
             onClick={onClose}
-            className="text-lg font-semibold text-slate-800 hover:text-[#E06338] py-2 border-b border-slate-100"
+            className="text-lg font-semibold text-slate-800 hover:text-[#e6704a] py-2 border-b border-slate-100"
           >
             contact
           </Link>
@@ -94,7 +94,7 @@ export default function MobileDrawer({
             target="_blank"
             rel="noopener noreferrer"
             onClick={onClose}
-            className="w-full py-3.5 px-4 bg-[#E06338] hover:bg-[#C54E26] text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-sm transition-colors"
+            className="w-full py-3.5 px-4 bg-[#e6704a] hover:bg-[#c8552e] text-white font-bold rounded-xl flex items-center justify-center gap-2 shadow-sm transition-colors"
           >
             <Calendar className="w-5 h-5" />
             <span>Book Appointment Online</span>
@@ -103,7 +103,7 @@ export default function MobileDrawer({
 
           <a
             href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-            className="w-full py-3 px-4 bg-orange-50 hover:bg-orange-100 text-[#E06338] font-semibold rounded-xl flex items-center justify-center gap-2 transition-colors"
+            className="w-full py-3 px-4 bg-orange-50 hover:bg-orange-100 text-[#e6704a] font-semibold rounded-xl flex items-center justify-center gap-2 transition-colors"
           >
             <Phone className="w-5 h-5" />
             <span>Call {CLINIC_INFO.phone}</span>
@@ -125,7 +125,7 @@ export default function MobileDrawer({
         {/* Hours & Location Info */}
         <div className="bg-slate-50 p-4 rounded-xl space-y-3 text-xs text-slate-600 border border-slate-100">
           <div className="flex items-start gap-2.5">
-            <Clock className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
+            <Clock className="w-4 h-4 text-[#e6704a] shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-slate-800">Opening Hours</p>
               <p>Mon–Fri: 7:30 AM – 6:00 PM</p>
@@ -133,7 +133,7 @@ export default function MobileDrawer({
             </div>
           </div>
           <div className="flex items-start gap-2.5 border-t border-slate-200/60 pt-2.5">
-            <MapPin className="w-4 h-4 text-[#E06338] shrink-0 mt-0.5" />
+            <MapPin className="w-4 h-4 text-[#e6704a] shrink-0 mt-0.5" />
             <div>
               <p className="font-semibold text-slate-800">Address</p>
               <p>{CLINIC_INFO.address}</p>

@@ -8,7 +8,7 @@ export default function MobileActionBar() {
       {/* Call Button */}
       <a
         href={`tel:${CLINIC_INFO.phone.replace(/\s+/g, "")}`}
-        className="shrink-0 py-2.5 sm:py-3 px-3 bg-orange-50 border border-orange-200 text-[#E06338] font-semibold text-xs sm:text-sm rounded-xl flex items-center justify-center gap-1.5 active:bg-orange-100 transition-colors whitespace-nowrap"
+        className="shrink-0 py-2.5 sm:py-3 px-3 bg-orange-50 border border-orange-200 text-[#e6704a] font-semibold text-xs sm:text-sm rounded-xl flex items-center justify-center gap-1.5 active:bg-orange-100 transition-colors whitespace-nowrap"
       >
         <Phone className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
         <span className="whitespace-nowrap">Call Clinic</span>
@@ -19,7 +19,7 @@ export default function MobileActionBar() {
         href={CLINIC_URLS.bookingUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 py-2.5 sm:py-3 px-3 bg-[#E06338] text-white font-bold text-xs sm:text-sm rounded-xl flex items-center justify-center gap-1.5 active:bg-[#C54E26] shadow-md transition-colors whitespace-nowrap"
+        className="flex-1 py-2.5 sm:py-3 px-3 bg-[#5aa316] text-white font-bold text-xs sm:text-sm rounded-xl flex items-center justify-center gap-1.5 active:bg-[#4a8a12] shadow-md transition-colors whitespace-nowrap"
       >
         <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
         <span className="whitespace-nowrap">Book Appointment</span>

@@ -43,7 +43,7 @@ export default function MentalHealthPage() {
         <div>
           <Link
             href="/#services"
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#E06338] hover:underline"
+            className="inline-flex items-center gap-2 text-xs font-bold text-[#e6704a] hover:underline"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Services</span>
@@ -54,7 +54,7 @@ export default function MentalHealthPage() {
         <div className="bg-white p-6 sm:p-10 rounded-3xl border border-slate-100 shadow-soft">
           <div className="space-y-8">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
-              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#E06338]">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#e6704a]">
                 Mental Health Care &amp; Support
               </h1>
 
@@ -62,7 +62,7 @@ export default function MentalHealthPage() {
                 href={CLINIC_URLS.bookingUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-3.5 bg-[#E06338] hover:bg-[#C54E26] text-white font-extrabold text-sm sm:text-base tracking-wider uppercase rounded-xl transition-all shadow-md inline-flex items-center gap-2 shrink-0"
+                className="px-8 py-3.5 bg-[#e6704a] hover:bg-[#c8552e] text-white font-extrabold text-sm sm:text-base tracking-wider uppercase rounded-xl transition-all shadow-md inline-flex items-center gap-2 shrink-0"
               >
                 <span>BOOK NOW</span>
                 <ExternalLink className="w-4 h-4" />
@@ -72,7 +72,7 @@ export default function MentalHealthPage() {
             <div className="space-y-6 text-slate-700 text-sm sm:text-base leading-relaxed max-w-4xl">
               {/* Self Help Section */}
               <div className="space-y-3">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#E06338]">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#e6704a]">
                   Self-Help
                 </h2>
                 <p>
@@ -88,13 +88,13 @@ export default function MentalHealthPage() {
                   <ul className="space-y-1.5 text-xs sm:text-sm">
                     {selfHelpLinks.map((item, idx) => (
                       <li key={idx} className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#E06338] shrink-0" />
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#e6704a] shrink-0" />
                         <span>{item.label}:</span>
                         <a
                           href={item.url}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#E06338] font-semibold hover:underline"
+                          className="text-[#e6704a] font-semibold hover:underline"
                         >
                           {item.url.replace("https://", "")}
                         </a>
@@ -106,7 +106,7 @@ export default function MentalHealthPage() {
 
               {/* Mental Health Care Plan Section */}
               <div className="space-y-4 pt-4 border-t border-slate-100">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#E06338]">
+                <h2 className="text-xl sm:text-2xl font-bold text-[#e6704a]">
                   Mental Health Care Plan
                 </h2>
 
@@ -161,7 +161,7 @@ export default function MentalHealthPage() {
                 </p>
 
                 <p className="pt-2">
-                  <Link href="/contact" className="text-[#E06338] font-bold hover:underline">
+                  <Link href="/contact" className="text-[#e6704a] font-bold hover:underline">
                     Contact us
                   </Link>{" "}
                   today or book online for a consultation.
