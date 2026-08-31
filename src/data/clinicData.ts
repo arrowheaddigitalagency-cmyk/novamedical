@@ -508,19 +508,19 @@ export const OPENING_HOURS: OpeningHourItem[] = [
 export const ACCREDITATION_LOGOS = [
   {
     id: "agpal",
-    src: "/images/agpal-logo.png",
+    src: "/images/1st.webp",
     alt: "AGPAL Quality Accredited Practice",
     title: "AGPAL Accredited Practice",
   },
   {
     id: "ama",
-    src: "/images/ama-logo.png",
+    src: "/images/2nd.jpeg",
     alt: "Australian Medical Association WA (AMA WA) Member",
     title: "AMA WA Member",
   },
   {
     id: "racgp",
-    src: "/images/racgp-logo.png",
+    src: "/images/3rd.png",
     alt: "Royal Australian College of General Practitioners (RACGP)",
     title: "RACGP Accredited Facility",
   },

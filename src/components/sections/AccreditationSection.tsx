@@ -32,19 +32,23 @@ export default function AccreditationSection() {
             </div>
 
             {/* Large Single Row Icons */}
-            <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16 md:gap-20 w-full my-6">
+            <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-14 md:gap-16 w-full my-6">
               {ACCREDITATION_LOGOS.map((item) => (
-                <Image
+                <div 
                   key={item.id}
-                  src={item.src}
-                  alt={item.alt}
-                  title={item.title}
-                  width={400}
-                  height={160}
-                  className="h-24 sm:h-32 md:h-36 w-auto object-contain transition-transform hover:scale-105 drop-shadow-xs"
-                  unoptimized
-                  priority
-                />
+                  className="flex items-center justify-center p-3 sm:p-4 rounded-2xl bg-white shadow-xs border border-slate-100 hover:shadow-md transition-all duration-300 hover:scale-105"
+                >
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    title={item.title}
+                    width={400}
+                    height={160}
+                    className="h-20 sm:h-24 md:h-28 w-auto max-w-[220px] object-contain"
+                    unoptimized
+                    priority
+                  />
+                </div>
               ))}
             </div>
 
